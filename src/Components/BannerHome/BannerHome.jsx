@@ -38,7 +38,6 @@ const BannerHome = () => {
               />
             </div>
           ))}
-          <BouncingScroll />
         </div>
 
         <button
