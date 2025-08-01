@@ -60,7 +60,7 @@ export default function WhatsAppWidget() {
           <div
             className={`w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${
               isHovered ? "scale-110 shadow-xl" : "scale-100"
-            } ${showNotification ? "animate-bounce" : ""}`}>
+            } ${showNotification}`}>
             <MessageCircle className="w-8 h-8 text-white" />
           </div>
 
