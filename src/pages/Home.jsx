@@ -9,6 +9,7 @@ import TourVirtual from "../Components/TourVirtual/TourVirtual";
 import FaqSection from "../Components/Faq/Faq";
 import TrabalheConosco from "../Components/WorkWithUs/TrabalheConosco";
 import Footer from "../Components/Footer/Footer";
+import WhatsAppWidget from "../Components/WppWidget/WppWidget";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <FaqSection />
       <Footer />
       {/* <PaymentsMethods /> */}
+      <WhatsAppWidget />
     </main>
   );
 }
