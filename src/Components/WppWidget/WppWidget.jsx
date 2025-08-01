@@ -26,7 +26,7 @@ export default function WhatsAppWidget() {
   };
 
   return (
-    <div className="fixed bottom-6 right-3 z-50">
+    <div className="fixed bottom-8 right-8 z-50">
       <div
         className="relative cursor-pointer"
         onMouseEnter={() => setIsHovered(true)}
@@ -39,7 +39,7 @@ export default function WhatsAppWidget() {
               ? "opacity-100 scale-100 translate-x-0"
               : "opacity-0 scale-95 translate-x-8 pointer-events-none"
           }`}
-          style={{ transform: "translateX(-200px)" }}>
+          style={{ transform: "translateX(-80px)" }}>
           <div className="bg-white border border-gray-200 text-gray-800 px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3 whitespace-nowrap transition-all duration-300 hover:shadow-3xl">
             <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
               <MessageCircle className="w-5 h-5 text-white" />
