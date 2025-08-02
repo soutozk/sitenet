@@ -3,30 +3,31 @@ import { bannerImages } from "../../Data/BannerData";
 import BouncingScroll from "../BouncingScroll/BouncingScroll";
 
 const BannerHome = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % bannerImages.length);
-    }, 7500);
-    return () => clearInterval(interval);
-  }, []);
+  // const [currentSlide, setCurrentSlide] = useState(0);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentSlide((prev) => (prev + 1) % bannerImages.length);
+  //   }, 7500);
+  //   return () => clearInterval(interval);
+  // }, []);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % bannerImages.length);
-  };
+  // const nextSlide = () => {
+  //   setCurrentSlide((prev) => (prev + 1) % bannerImages.length);
+  // };
 
-  const prevSlide = () => {
-    setCurrentSlide(
-      (prev) => (prev - 1 + bannerImages.length) % bannerImages.length
-    );
-  };
+  // const prevSlide = () => {
+  //   setCurrentSlide(
+  //     (prev) => (prev - 1 + bannerImages.length) % bannerImages.length
+  //   );
+  // };
 
   return (
     <>
       <div className="w-full  relative overflow-hidden">
         <div
           className="flex h-full transition-transform duration-500"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+          // style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        >
           {bannerImages.map((image) => (
             <div
               key={image.id}
@@ -40,7 +41,7 @@ const BannerHome = () => {
           ))}
         </div>
 
-        <button
+        {/* <button
           onClick={prevSlide}
           className="absolute left-4 top-1/2 -translate-y-1/2 backdrop-blur-xl bg-white/10 border border-white/45 text-white p-2 rounded-full z-10"
           aria-label="Slide anterior">
@@ -51,7 +52,7 @@ const BannerHome = () => {
           className="absolute right-4 top-1/2 -translate-y-1/2 backdrop-blur-xl bg-white/10 border border-white/45 text-white p-2 rounded-full z-10"
           aria-label="Próximo slide">
           &gt;
-        </button>
+        </button> */}
       </div>
     </>
   );
