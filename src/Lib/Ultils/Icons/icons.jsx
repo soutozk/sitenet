@@ -7,7 +7,7 @@ import {
   Mail,
   Phone,
   MapPin,
-
+  Check,
 } from "lucide-react";
 
 export const iconComponents = {
@@ -19,10 +19,9 @@ export const iconComponents = {
   Mail,
   Phone,
   MapPin,
-  // Adicione outros ícones conforme necessário
+  Check,
 };
 
-// O resto do seu código (Icon e getIcon) permanece igual
 export const Icon = ({
   name,
   size = 24,

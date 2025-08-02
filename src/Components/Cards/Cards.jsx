@@ -13,33 +13,32 @@ const Testimonials = () => {
             O Que Nossos Clientes Dizem
           </h2>
           <p className="text-xl max-w-3xl mx-auto" style={{ color: "#f7b032" }}>
-            Histórias reais de profissionais que transformaram seu networking
+            Experiências reais de quem confia na conexão da MP Telecom
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8">
           {[
-            // Array para gerar os 3 cards
             {
-              nome: "Maria Santos",
-              cargo: "CEO, TechStart",
-              inicial: "M",
+              nome: "Carlos Ferreira",
+              cargo: "Empresário",
+              inicial: "C",
               texto:
-                "Revolucionou completamente minha forma de fazer networking. Em eventos, consigo compartilhar meus contatos de forma elegante e profissional. O retorno de investimento foi imediato!",
+                "A internet da MP Telecom superou minhas expectativas. A velocidade é excelente, e o suporte sempre me atende com rapidez e cordialidade.",
             },
             {
-              nome: "Roberto Lima",
-              cargo: "Arquiteto",
-              inicial: "R",
+              nome: "Juliana Rocha",
+              cargo: "Designer Gráfica",
+              inicial: "J",
               texto:
-                "A qualidade do cartão físico é impressionante, e a tecnologia NFC funciona perfeitamente. Meus clientes ficam sempre impressionados com a inovação. Recomendo sem hesitar!",
+                "Trabalho de casa e preciso de uma conexão estável. Com a MP Telecom, nunca tive problemas. A instalação foi super rápida e gratuita!",
             },
             {
-              nome: "Ana Costa",
-              cargo: "Consultora de Marketing",
+              nome: "André Souza",
+              cargo: "Streamer e Criador de Conteúdo",
               inicial: "A",
               texto:
-                "O suporte da Nask Card é excepcional. Sempre que preciso atualizar informações ou tenho dúvidas, eles respondem rapidamente. A página virtual é linda e profissional!",
+                "Finalmente encontrei uma empresa de internet que entrega o que promete. Posso fazer transmissões ao vivo com qualidade e sem quedas!",
             },
           ].map((card, i) => (
             <div

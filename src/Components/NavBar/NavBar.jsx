@@ -11,9 +11,7 @@ const NavBar = () => {
           <div className="mx-auto flex max-w-7xl items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-white">
-                MP TELECOM
-              </h1>
+              <h1 className="text-2xl font-bold text-white">MP TELECOM</h1>
             </div>
 
             {/* Navigation Links */}
@@ -22,32 +20,28 @@ const NavBar = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white hover:text-[#F0AA30] font-medium"
-                  >
+                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Planos
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-white hover:text-[#F0AA30] font-medium"
-                  >
+                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Contato
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-white hover:text-[#F0AA30] font-medium"
-                  >
+                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     TV
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-white hover:text-[#F0AA30] font-medium"
-                  >
+                    className="text-white hover:text-[#F0AA30] font-medium  text-lg">
                     Fibra Óptica
                   </a>
                 </li>
@@ -57,11 +51,11 @@ const NavBar = () => {
             {/* Right Side Actions */}
             <div className="flex items-center gap-4">
               <div className="relative group">
-                <button className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300
+                <button
+                  className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300
                 ">
                   Assine já
                 </button>
-
               </div>
             </div>
           </div>
