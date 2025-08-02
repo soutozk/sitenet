@@ -9,6 +9,7 @@ import Footer from "../Components/Footer/Footer";
 import WhatsAppWidget from "../Components/WppWidget/WppWidget";
 import Plans from "../Components/Planos/Planos";
 import About from "../Components/About/About";
+import Services from "../Components/Services/Services";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <NavBar />
       <BannerHome />
       <Plans />
+      <Services />
       <About />
       <Cards />
       <FaqSection /> <TourVirtual />
