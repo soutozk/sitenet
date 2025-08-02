@@ -19,7 +19,7 @@ export default function Home() {
       <Cards />
       <TourVirtual />
       <TrabalheConosco />
-      <FaqSection />
+      {/*<FaqSection /> */}
       <Footer />
       <WhatsAppWidget />
     </main>
