@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../Logo/Logo";
 import { Icon } from "../../Lib/Ultils/Icons/icons";
 
 const Footer = () => {
@@ -14,7 +13,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-3">
-              <Logo />
+              <h1 className="text-white">MP TELECOM</h1>
             </div>
 
             <p className="text-white max-w-md text-lg font-semibold">
@@ -97,9 +96,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Icon name="Phone" color="white" size={20} />
-                <span className="font-medium text-white ">
-                  (61) 99374-2005
-                </span>
+                <span className="font-medium text-white ">(61) 99374-2005</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="Mail" color="white" size={20} />
@@ -139,24 +136,22 @@ const Footer = () => {
         </div>
       </div>
 
-  <div className="relative w-full aspect-[1200/120]">
-    <svg viewBox="0 0 1200 120" className="w-full h-38 fill-[#F0AA30]">
-      <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"></path>
-    </svg>
-      <div className=" bg-[#F0AA30] py-2">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
-            <div className="flex flex-wrap items-center gap-6 text-sm font-medium">
-              <p className="text-white text-lg font-semibold">
-                © 2025 MP TELECOM
-              </p>
+      <div className="relative w-full aspect-[1200/120]">
+        <svg viewBox="0 0 1200 120" className="w-full h-38 fill-[#F0AA30]">
+          <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"></path>
+        </svg>
+        <div className=" bg-[#F0AA30] py-2">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+              <div className="flex flex-wrap items-center gap-6 text-sm font-medium">
+                <p className="text-white text-lg font-semibold">
+                  © 2025 MP TELECOM
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>    
-  </div>
-
-
+      </div>
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { bannerImages } from "../../Data/BannerData";
-import BouncingScroll from "../BouncingScroll/BouncingScroll";
 
 const BannerHome = () => {
   // const [currentSlide, setCurrentSlide] = useState(0);
