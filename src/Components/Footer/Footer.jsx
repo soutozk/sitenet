@@ -119,12 +119,6 @@ const Footer = () => {
                 <a
                   href="#"
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/80 transition-colors"
-                  aria-label="Facebook">
-                  <Icon name="Facebook" className="text-yellow-500" size={20} />
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/80 transition-colors"
                   aria-label="Instagram">
                   <Icon
                     name="Instagram"
@@ -135,14 +129,9 @@ const Footer = () => {
                 <a
                   href="#"
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/80 transition-colors"
-                  aria-label="Twitter">
-                  <Icon name="Twitter" className="text-yellow-500" size={20} />
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/80 transition-colors"
-                  aria-label="Youtube">
-                  <Icon name="Youtube" className="text-yellow-500" size={20} />
+                  aria-label="Whatsapp">
+                  <Icon name="WhatsApp" className="text-yellow-500" size={20} />
+                  ZAP
                 </a>
               </div>
             </div>
@@ -161,7 +150,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-wrap items-center gap-6 text-sm font-medium">
               <p className="text-white text-lg font-semibold">
-                © 2025 Bom Pra Você
+                © 2025 MP TELECOM
               </p>
               {/* <a href="#" className="hover:underline">
                 Política de Privacidade
