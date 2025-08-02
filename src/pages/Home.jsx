@@ -16,11 +16,11 @@ export default function Home() {
     <main className="min-h-screen bg-white  flex flex-col items-center ">
       <NavBar />
       <BannerHome />
+      <Cards />
       <TourVirtual />
       <TrabalheConosco />
       <FaqSection />
       <Footer />
-      {/* <PaymentsMethods /> */}
       <WhatsAppWidget />
     </main>
   );
