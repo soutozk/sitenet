@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import VagasList from "./VagasList";
 import VagaDetalhes from "./VagaDetalhes";
 import CandidaturaForm from "./CandidaturaForm";
-import Jobs from "../../images/Jobs/Jobs.png";
+
 
 const vagasDisponiveis = [
   {
@@ -107,7 +107,7 @@ export default function TrabalheConosco() {
             <div className="flex items-center justify-center">
               <div className="relative w-full max-w-[460px]  aspect-square overflow-hidden rounded-lg mb-6 lg:mb-0 lg:mr-[5%]">
                 <img
-                  src={Jobs}
+                  src=""
                   alt="Imagem da Seção de Freezer"
                   className="w-full h-full object-cover"
                 />

@@ -1,5 +1,5 @@
 import React from "react";
-import Freezer from "../../images/SupermarketAreasImages/VitualImage.png";
+
 
 export default function TourVirtual() {
   return (
@@ -12,7 +12,7 @@ export default function TourVirtual() {
         }}>
         <div className="relative w-full max-w-[520px] aspect-square overflow-hidden rounded-lg mb-6 lg:mb-0 lg:mr-[5%]">
           <img
-            src={Freezer}
+            src=""
             alt="Imagem da Seção de Freezer"
             className="w-full h-full object-cover"
           />
