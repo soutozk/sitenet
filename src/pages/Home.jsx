@@ -13,7 +13,7 @@ import WhatsAppWidget from "../Components/WppWidget/WppWidget";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white  flex flex-col items-center ">
+    <main className="min-h-screen flex flex-col items-center bg-black ">
       <NavBar />
       <BannerHome />
       <Cards />
