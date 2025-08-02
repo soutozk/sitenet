@@ -5,12 +5,12 @@ import { Icon } from "../../Lib/Ultils/Icons/icons";
 const Footer = () => {
   return (
     <div
-      className=" w-full bg-yellow-400   rounded-3xl"
+      className=" w-full bg-[#F0AA30]   rounded-3xl"
       style={{
         boxShadow:
           "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
       }}>
-      <div className="container mx-auto px-6 py-12">
+      <div className="container mx-auto px-6 py-2">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-3">
@@ -97,7 +97,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Icon name="Phone" color="white" size={20} />
-                <span className="font-medium text-white font-bold">
+                <span className="font-medium text-white ">
                   (61) 99374-2005
                 </span>
               </div>
@@ -139,35 +139,24 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="relative">
-        <svg viewBox="0 0 1200 120" className="w-full h-8 fill-yellow-500">
-          <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"></path>
-        </svg>
-      </div>
-
-      <div className="bg-yellow-500 py-6">
+  <div className="relative w-full aspect-[1200/120]">
+    <svg viewBox="0 0 1200 120" className="w-full h-38 fill-black">
+      <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"></path>
+    </svg>
+      <div className=" bg-black py-2">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
             <div className="flex flex-wrap items-center gap-6 text-sm font-medium">
               <p className="text-white text-lg font-semibold">
                 © 2025 MP TELECOM
               </p>
-              {/* <a href="#" className="hover:underline">
-                Política de Privacidade
-              </a> */}
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <p className="text-lg font-semibold font-medium text-white">
-                Pagamento seguro:
-              </p>
-              <div className="flex space-x-2">
-                <button>Visualizar Metodos de Pagamento </button>
-              </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>    
+  </div>
+
+
     </div>
   );
 };
