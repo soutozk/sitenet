@@ -6,8 +6,12 @@ const NavBar = () => {
   return (
     <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-7xl">
       <div
-        className="backdrop-blur-sm bg-yellow-300/30 border-[3px] border-yellow-300 rounded-full px-8 py-4 shadow-2xl shadow-white/10"
-        style={{ boxShadow: "rgba(255, 238, 0, 0.76) 0px 10px 30px" }}>
+        className="backdrop-blur-sm rounded-full px-8 py-4 shadow-2xl"
+        style={{
+          border: "3px solid #f7b032",
+          boxShadow: "rgba(253, 160, 0, 0.35) 0px 8px 20px",
+          backgroundColor: "rgba(253, 186, 116, 0.3)",
+        }}>
         <div className="flex items-center">
           <div>
             <Logo />
