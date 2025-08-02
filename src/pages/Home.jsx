@@ -16,10 +16,7 @@ export default function Home() {
     <main className="min-h-screen bg-white  flex flex-col items-center ">
       <NavBar />
       <BannerHome />
-      <Tabloide />
-      <Cards />
       <TourVirtual />
-      <About />
       <TrabalheConosco />
       <FaqSection />
       <Footer />
