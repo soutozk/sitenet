@@ -18,7 +18,7 @@ export default function Home() {
       <BannerHome />
       <TourVirtual />
       <TrabalheConosco />
-      <FaqSection />
+      {/*<FaqSection /> */}
       <Footer />
       {/* <PaymentsMethods /> */}
       <WhatsAppWidget />
