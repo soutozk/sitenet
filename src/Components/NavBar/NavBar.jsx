@@ -5,7 +5,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full z-50 bg-black text-white shadow-md border-b-2 border-[#F0AA30]">
+      <div className="fixed top-0 left-0 w-full z-50 bg-black text-white shadow-md border-b-2 border-yellow-600">
         {/* Main Navigation */}
         <div className="px-4 py-4">
           <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -57,7 +57,7 @@ const NavBar = () => {
             {/* Right Side Actions */}
             <div className="flex items-center gap-4">
               <div className="relative group">
-                <button className="bg-transparent border border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300
+                <button className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300
                 ">
                   Assine já
                 </button>

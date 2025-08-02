@@ -5,7 +5,7 @@ import { Icon } from "../../Lib/Ultils/Icons/icons";
 const Footer = () => {
   return (
     <div
-      className=" w-full bg-[#F0AA30]   rounded-3xl"
+      className=" w-full border border-[#F0AA30]   rounded-3xl"
       style={{
         boxShadow:
           "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
@@ -140,10 +140,10 @@ const Footer = () => {
       </div>
 
   <div className="relative w-full aspect-[1200/120]">
-    <svg viewBox="0 0 1200 120" className="w-full h-38 fill-black">
+    <svg viewBox="0 0 1200 120" className="w-full h-38 fill-[#F0AA30]">
       <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"></path>
     </svg>
-      <div className=" bg-black py-2">
+      <div className=" bg-[#F0AA30] py-2">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
             <div className="flex flex-wrap items-center gap-6 text-sm font-medium">
