@@ -50,7 +50,7 @@ const Testimonials = () => {
                     className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold"
                     style={{
                       background:
-                        "linear-gradient(to bottom right, #f7b032, #d69825)",
+                        "linear-gradient(to bottom right,rgba(247, 175, 50, 0.82), #d69825)",
                     }}>
                     {card.inicial}
                   </div>

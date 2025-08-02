@@ -3,82 +3,102 @@ import { Icon } from "../../Lib/Ultils/Icons/icons";
 
 const Plans = () => {
   return (
-    <section id="about" className="py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section id="plans">
+      <div className=" ">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Sobre a <span className="text-[#F0AA30]">MP TELECOM</span>
+            Planos e Serviços
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Conectamos você ao mundo com internet de alta velocidade, canais
-            exclusivos e um atendimento que entende suas necessidades.
+            Escolha o plano ideal para sua casa ou empresa
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-2xl font-bold mb-6 text-[#F0AA30]">
-              Nossa Missão
-            </h3>
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Levar conexão de qualidade a lares e empresas, com tecnologia de
-              ponta, suporte técnico eficiente e um serviço personalizado que
-              vai além da internet.
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Plano Essencial */}
+          <div className="bg-black/40 border border-gray-500/20 backdrop-blur-sm rounded-lg p-6">
+            <h3 className="text-white text-2xl font-bold mb-2">Essencial</h3>
+            <p className="text-gray-300 mb-4">
+              Ideal para navegação e redes sociais
             </p>
-            <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <Icon name="Check" className="h-5 w-5 text-[#F0AA30]" />
-                <span className="text-white">
-                  Internet fibra óptica de alta velocidade
-                </span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Icon name="Check" className="h-5 w-5 text-[#F0AA30]" />
-                <span className="text-white">Instalação 100% gratuita</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Icon name="Check" className="h-5 w-5 text-[#F0AA30]" />
-                <span className="text-white">
-                  Atendimento personalizado e suporte técnico eficaz
-                </span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Icon name="Check" className="h-5 w-5 text-[#F0AA30]" />
-                <span className="text-white">
-                  Wi-Fi potente em todos os ambientes
-                </span>
-              </div>
+            <div className="text-3xl font-bold text-white mb-4">
+              R$ 89
+              <span className="text-lg font-normal text-gray-400">/mês</span>
             </div>
+            <ul className="space-y-3 text-gray-300">
+              <li className="flex items-center gap-2">
+                ✅ Internet de 200Mbps
+              </li>
+              <li className="flex items-center gap-2">
+                ✅ Instalação gratuita
+              </li>
+              <li className="flex items-center gap-2">✅ Wi-Fi incluso</li>
+              <li className="flex items-center gap-2">
+                ✅ Suporte técnico básico
+              </li>
+            </ul>
+            <button className="w-full mt-6 bg-gray-700 hover:bg-gray-600 text-white py-2 rounded">
+              Escolher Plano
+            </button>
           </div>
-          <div className="relative">
-            <div className="bg-gradient-to-br from-yellow-600/10 to-gray-800/10 rounded-2xl p-8 backdrop-blur-sm border border-white/30">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F0AA30] mb-2">
-                    10K+
-                  </div>
-                  <div className="text-gray-300">Clientes</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F0AA30] mb-2">
-                    99%
-                  </div>
-                  <div className="text-gray-300">Satisfação</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F0AA30] mb-2">
-                    24/7
-                  </div>
-                  <div className="text-gray-300">Suporte</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F0AA30] mb-2">
-                    5★
-                  </div>
-                  <div className="text-gray-300">Avaliação</div>
-                </div>
-              </div>
+
+          {/* Plano Avançado */}
+          <div className="bg-gradient-to-br from-yellow-600/40 to-yellow-500/10 border border-yellow-500/40 backdrop-blur-sm rounded-lg p-6 relative">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-black px-3 py-1 text-sm font-semibold rounded">
+              Mais Popular
             </div>
+            <h3 className="text-white text-2xl font-bold mb-2">Avançado</h3>
+            <p className="text-yellow-200 mb-4">
+              Perfeito para quem trabalha em casa ou assiste streaming
+            </p>
+            <div className="text-3xl font-bold text-white mb-4">
+              R$ 139
+              <span className="text-lg font-normal text-yellow-200">/mês</span>
+            </div>
+            <ul className="space-y-3 text-yellow-100">
+              <li className="flex items-center gap-2">
+                ✅ Internet de 400Mbps
+              </li>
+              <li className="flex items-center gap-2">
+                ✅ Wi-Fi de longo alcance
+              </li>
+              <li className="flex items-center gap-2">
+                ✅ Suporte técnico 24h
+              </li>
+              <li className="flex items-center gap-2">✅ Canais exclusivos</li>
+            </ul>
+            <button className="w-full mt-6 bg-yellow-500 hover:bg-yellow-400 text-black py-2 rounded font-semibold">
+              Escolher Plano
+            </button>
+          </div>
+
+          {/* Plano Empresarial */}
+          <div className="bg-black/40 border border-gray-500/20 backdrop-blur-sm rounded-lg p-6">
+            <h3 className="text-white text-2xl font-bold mb-2">Empresarial</h3>
+            <p className="text-gray-300 mb-4">
+              Conexão estável para equipes e escritórios
+            </p>
+            <div className="text-3xl font-bold text-white mb-4">
+              R$ 249
+              <span className="text-lg font-normal text-gray-400">/mês</span>
+            </div>
+            <ul className="space-y-3 text-gray-300">
+              <li className="flex items-center gap-2">
+                ✅ Internet de 600Mbps
+              </li>
+              <li className="flex items-center gap-2">
+                ✅ Instalação e suporte prioritário
+              </li>
+              <li className="flex items-center gap-2">
+                ✅ Roteador empresarial incluso
+              </li>
+              <li className="flex items-center gap-2">
+                ✅ Atendimento personalizado
+              </li>
+            </ul>
+            <button className="w-full mt-6 bg-gray-700 hover:bg-gray-600 text-white py-2 rounded">
+              Falar com Vendas
+            </button>
           </div>
         </div>
       </div>

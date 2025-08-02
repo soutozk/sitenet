@@ -1,86 +1,87 @@
 import React from "react";
-import AboutImage from "../../images/About.webp";
+import { Icon } from "../../Lib/Ultils/Icons/icons";
 
 export default function About() {
   return (
-    <div className="w-full flex flex-col items-center justify-center pt-[5%] pb-[5%]">
-      <div
-        className="flex flex-col lg:flex-row w-full max-w-7xl  p-8 rounded-2xl gap-14"
-        // style={{
-        //   boxShadow:
-        //     "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px",
-        // }}
-      >
-        <div className="text-white max-w-xl flex flex-col justify-center">
-          <h1 className="text-5xl md:text-5xl font-bold mb-4 text-black">
-            Sobre o Bom Pra Você{" "}
-            <span className=" text-yellow-300">Supermercado</span>
-          </h1>
-          <p className="text-lg md:text-2xl leading-relaxed text-black">
-            O Bom Pra Você Supermercado nasceu com o objetivo de oferecer
-            produtos de qualidade, bons preços e um atendimento próximo e
-            humano. Desde a nossa fundação, buscamos ser mais do que um mercado
-            — queremos fazer parte da rotina das famílias, com um ambiente
-            acolhedor e setores completos: hortifrúti, padaria, açougue,
-            freezer, bebidas e muito mais. Aqui, cada detalhe é pensado para
-            garantir praticidade, economia e confiança para o seu dia a dia.
+    <section id="about" className="py-20 px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            Sobre a <span className="text-[#F0AA30]">MP TELECOM</span>
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            Conectamos você ao mundo com internet de alta velocidade, canais
+            exclusivos e um atendimento que entende suas necessidades.
           </p>
-          <div className="mt-6 flex gap-4">
-            <div
-              className=" w-[200px] h-[50px] border-2 border-yellow-400 m-[1%] flex items-center justify-center rounded-xl"
-              style={{
-                boxShadow:
-                  "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px",
-              }}>
-              <p className="text-black p-4 text-center">+20 anos no mercado</p>
-            </div>
-
-            <div
-              className="w-[200px] h-[50px] border-2 border-yellow-400 m-[1%] flex items-center justify-center rounded-xl"
-              style={{
-                boxShadow:
-                  "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px",
-              }}>
-              <p className="text-black p-4  text-center">
-                Atendimento personalizado
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-6 flex gap-4">
-            <div
-              className="w-[200px] h-[50px] border-2 border-yellow-400 m-[1%] flex items-center justify-center rounded-xl"
-              style={{
-                boxShadow:
-                  "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px",
-              }}>
-              <p className="text-black p-4  text-center">
-                Garantia de qualidade
-              </p>
-            </div>
-
-            <div
-              className="w-[200px] h-[50px] border-2 border-yellow-400 m-[1%] flex items-center justify-center rounded-xl"
-              style={{
-                boxShadow:
-                  "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px",
-              }}>
-              <p className="text-black   text-center text-bold">
-                Clientes satisfeitos
-              </p>
-            </div>
-          </div>
         </div>
 
-        <div
-          className="relative h-[220px] lg:h-[520px] w-full max-w-[520px] mx-auto overflow-hidden rounded-lg bg-yellow-300"
-          style={{
-            boxShadow:
-              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px",
-          }}>
-          <img src={AboutImage} alt="" className="w-full h-full object-cover" />
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 className="text-2xl font-bold mb-6 text-[#F0AA30]">
+              Nossa Missão
+            </h3>
+            <p className="text-gray-300 mb-6 leading-relaxed">
+              Levar conexão de qualidade a lares e empresas, com tecnologia de
+              ponta, suporte técnico eficiente e um serviço personalizado que
+              vai além da internet.
+            </p>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <Icon name="Check" className="h-5 w-5 text-[#F0AA30]" />
+                <span className="text-white">
+                  Internet fibra óptica de alta velocidade
+                </span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Icon name="Check" className="h-5 w-5 text-[#F0AA30]" />
+                <span className="text-white">Instalação 100% gratuita</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Icon name="Check" className="h-5 w-5 text-[#F0AA30]" />
+                <span className="text-white">
+                  Atendimento personalizado e suporte técnico eficaz
+                </span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Icon name="Check" className="h-5 w-5 text-[#F0AA30]" />
+                <span className="text-white">
+                  Wi-Fi potente em todos os ambientes
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="bg-gradient-to-br from-yellow-600/10 to-gray-800/10 rounded-2xl p-8 backdrop-blur-sm border border-white/30">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#F0AA30] mb-2">
+                    10K+
+                  </div>
+                  <div className="text-gray-300">Clientes</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#F0AA30] mb-2">
+                    99%
+                  </div>
+                  <div className="text-gray-300">Satisfação</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#F0AA30] mb-2">
+                    24/7
+                  </div>
+                  <div className="text-gray-300">Suporte</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-[#F0AA30] mb-2">
+                    5★
+                  </div>
+                  <div className="text-gray-300">Avaliação</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
