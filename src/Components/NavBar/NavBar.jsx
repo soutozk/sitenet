@@ -45,6 +45,13 @@ const NavBar = () => {
                     Fibra Óptica
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-white hover:text-[#F0AA30] font-medium  text-lg">
+                    Ajuda
+                  </a>
+                </li>
               </ul>
             </nav>
 
