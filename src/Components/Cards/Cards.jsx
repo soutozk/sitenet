@@ -45,7 +45,7 @@ const Testimonials = () => {
           ].map((card, i) => (
             <div
               key={i}
-              className="bg-gradient-to-br from-[#f7b03233] to-black border border-[#f7b03244] backdrop-blur-sm rounded-lg p-6 flex-1">
+              className="bg-black border border-white/20 backdrop-blur-sm hover:border-[#F0AA30] backdrop-blur-sm rounded-lg p-6 flex-1">
               <div className="mb-4">
                 <div className="flex items-center space-x-4 mb-2">
                   <div

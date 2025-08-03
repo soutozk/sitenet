@@ -10,6 +10,7 @@ import WhatsAppWidget from "../Components/WppWidget/WppWidget";
 import Plans from "../Components/Plans/Plans";
 import About from "../Components/About/About";
 import Services from "../Components/Services/Services";
+import Advantages from "../Components/Advantages/Advantages";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <NavBar />
       <BannerHome />
       <About />
-
+      <Advantages />
       <Cards />
 
       <Plans />
