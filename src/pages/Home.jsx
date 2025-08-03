@@ -18,9 +18,10 @@ export default function Home() {
       <BannerHome />
       <Plans />
       <Services />
-      <About />
       <Cards />
-      <FaqSection /> <TourVirtual />
+      <FaqSection />
+      <About />
+      <TourVirtual />
       <TrabalheConosco />
       <Footer />
       <WhatsAppWidget />

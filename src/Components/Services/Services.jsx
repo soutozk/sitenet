@@ -9,7 +9,7 @@ const Service = () => {
       <div className="grid md:grid-cols-4 gap-6">
         {/* Suporte Técnico */}
         <div className="text-center">
-          <div className="w-16 h-16 bg-orange-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="payment-card w-16 h-16 relative z-[1] rounded-full flex items-center justify-center mx-auto mb-4">
             <svg
               className="h-8 w-8 text-[#F0AA30]"
               fill="none"
@@ -28,7 +28,7 @@ const Service = () => {
 
         {/* Instalação Grátis */}
         <div className="text-center">
-          <div className="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="payment-card w-16 h-16 relative z-[1] rounded-full flex items-center justify-center mx-auto mb-4">
             <svg
               className="h-8 w-8 text-[#F0AA30]"
               fill="none"
@@ -46,7 +46,7 @@ const Service = () => {
 
         {/* Canais Exclusivos */}
         <div className="text-center">
-          <div className="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="payment-card w-16 h-16 relative z-[1] rounded-full flex items-center justify-center mx-auto mb-4">
             <svg
               className="h-8 w-8 text-[#F0AA30]"
               fill="none"
@@ -64,7 +64,7 @@ const Service = () => {
 
         {/* Wi-Fi Potente */}
         <div className="text-center">
-          <div className="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="payment-card w-16 h-16 relative z-[1] rounded-full flex items-center justify-center mx-auto mb-4">
             <svg
               className="h-8 w-8 text-[#F0AA30]"
               fill="none"
