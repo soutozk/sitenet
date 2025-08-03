@@ -2,7 +2,7 @@ import React from "react";
 
 const Service = () => {
   return (
-    <div className="mt-16">
+    <div className="mt-[3%] mb-[5%]">
       <h3 className="text-2xl font-bold text-center mb-8 text-[#F0AA30]">
         Serviços Inclusos
       </h3>

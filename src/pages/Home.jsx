@@ -16,13 +16,17 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center bg-black ">
       <NavBar />
       <BannerHome />
+      <About />
+
+      <Cards />
+
       <Plans />
       <Services />
-      <Cards />
-      <FaqSection />
-      <About />
-      <TourVirtual />
-      <TrabalheConosco />
+      {/* sectio de orçamento q o user vai prencher um formulario e ao clicar ele leva para o wpp com o pedido ja escrito */}
+
+      {/* <FaqSection /> */}
+      {/* <TourVirtual /> */}
+      {/* <TrabalheConosco /> */}
       <Footer />
       <WhatsAppWidget />
     </main>

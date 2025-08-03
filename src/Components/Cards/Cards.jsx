@@ -2,7 +2,9 @@ import React from "react";
 
 const Testimonials = () => {
   return (
-    <div id="testimonials" className="py-20 px-4">
+    <div
+      id="testimonials"
+      className="py-20 px-4 mt-[5%] mb-[5%] border border-[#F0AA30] p-8 rounded-3xl w-full ">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2
