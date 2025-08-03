@@ -7,7 +7,7 @@ import FaqSection from "../Components/Faq/Faq";
 import TrabalheConosco from "../Components/WorkWithUs/TrabalheConosco";
 import Footer from "../Components/Footer/Footer";
 import WhatsAppWidget from "../Components/WppWidget/WppWidget";
-import Plans from "../Components/Planos/Planos";
+import Plans from "../Components/Plans/Plans";
 import About from "../Components/About/About";
 import Services from "../Components/Services/Services";
 
