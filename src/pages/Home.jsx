@@ -20,7 +20,6 @@ export default function Home() {
       <About />
       <Advantages />
       <Cards />
-
       <Plans />
       <Services />
       {/* sectio de orçamento q o user vai prencher um formulario e ao clicar ele leva para o wpp com o pedido ja escrito */}

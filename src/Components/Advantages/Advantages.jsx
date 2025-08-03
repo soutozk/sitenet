@@ -59,7 +59,7 @@ const Advantages = () => {
           {/* Equipe Qualificada */}
           <div className="bg-black/40 border border-white/20 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
             <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
-              <Icon name="WhatsApp" className="text-yellow-500" size={20} />
+              <Icon name="Check" className="text-yellow-500" size={20} />
             </div>
             <h3 className="text-white text-xl font-bold mb-2">
               Equipe Qualificada
