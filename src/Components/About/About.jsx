@@ -55,13 +55,13 @@ export default function About() {
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-[#F0AA30] mb-2">
-                    10K+
+                    1K+
                   </div>
                   <div className="text-gray-300">Clientes</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-[#F0AA30] mb-2">
-                    99%
+                    98%
                   </div>
                   <div className="text-gray-300">Satisfação</div>
                 </div>
@@ -73,7 +73,7 @@ export default function About() {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-[#F0AA30] mb-2">
-                    5★
+                    5 ★
                   </div>
                   <div className="text-gray-300">Avaliação</div>
                 </div>
