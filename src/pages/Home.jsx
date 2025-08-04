@@ -11,6 +11,7 @@ import Plans from "../Components/Plans/Plans";
 import About from "../Components/About/About";
 import Services from "../Components/Services/Services";
 import Advantages from "../Components/Advantages/Advantages";
+import ContactForm from "../Components/ContactForm/ContactForm";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
       <Cards />
       <Plans />
       <Services />
-      {/* sectio de orçamento q o user vai prencher um formulario e ao clicar ele leva para o wpp com o pedido ja escrito */}
+      <ContactForm />
 
       {/* <FaqSection /> */}
       {/* <TourVirtual /> */}
