@@ -11,35 +11,7 @@ const Footer = () => {
           "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
       }}>
       <div className="container mx-auto px-6 py-2">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="lg:col-span-2 space-y-6">
-            <div className="flex items-center space-x-3">
-              <h1 className="text-white">MP TELECOM</h1>
-            </div>
-
-            <p className="text-white max-w-md text-lg font-semibold">
-              As melhores ofertas do mercado
-            </p>
-
-            <div
-              className="bg-white rounded-2xl p-6"
-              style={{ boxShadow: "rgba(0, 0, 0, 0.42) 0px 10px 30px" }}>
-              <h3 className="font-semibold text-lg mb-3">
-                Entre em contato via E-mail
-              </h3>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <input
-                  type="email"
-                  placeholder="Seu melhor e-mail"
-                  className="flex-1 px-4 py-3 rounded-xl  border-yellow-400 border-[2px] focus:border-white focus:outline-none bg-white/90"
-                />
-                <button className="bg-white text-yellow-400 border-yellow-400 border-[2px] px-6 py-3 rounded-xl font-semibold hover:bg-white/80 transition-colors">
-                  Inscrever
-                </button>
-              </div>
-            </div>
-          </div>
-
+        <div className="flex justify-around ">
           <div className="space-y-4">
             <h3 className="font-bold text-lg border-b-2 text-white pb-2 ">
               Links Rápidos
@@ -49,42 +21,35 @@ const Footer = () => {
                 <a
                   href="#home"
                   className="text-white font-bold hover:text-black transition-colors">
-                  Início
+                  Planos
                 </a>
               </li>
               <li>
                 <a
                   href="#produtos"
                   className="text-white font-bold hover:text-black transition-colors ">
-                  Promoções
+                  Contato
                 </a>
               </li>
               <li>
                 <a
                   href="#servicos"
                   className="text-white font-bold hover:text-black transition-colors">
-                  Setores
+                  Tv
                 </a>
               </li>
               <li>
                 <a
                   href="#contato"
                   className="text-white font-bold hover:text-black transition-colors">
-                  Tour
+                  Fibra Óptica
                 </a>
               </li>
               <li>
                 <a
                   href="#contato"
                   className="text-white font-bold hover:text-black transition-colors">
-                  Sobre
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contato"
-                  className="text-white font-bold hover:text-black transition-colors">
-                  Vagas
+                  Ajuda
                 </a>
               </li>
             </ul>
@@ -97,12 +62,12 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Icon name="Phone" color="white" size={20} />
-                <span className="font-medium text-white ">(61) 99374-2005</span>
+                <span className="font-medium text-white ">(61) 98678-1663</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="Mail" color="white" size={20} />
                 <span className="font-medium text-white">
-                  contato@bompravocê.com
+                  contato@mptelecom
                 </span>
               </div>
               <div className="flex items-center space-x-3">
@@ -111,24 +76,34 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="pt-4">
-              <h4 className="font-semibold mb-3 text-white">Siga-nos</h4>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="font-bold text-lg border-b-2 text-white pb-2">
+              Redes Socias
+            </h3>
+            <div className="space-y-3">
+
+
+            </div>
+
+            <div className="pt-6">
               <div className="flex space-x-3">
                 <a
                   href="#"
-                  className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/80 transition-colors"
+                  className="w-11 h-11 border border-white hover:border-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors"
                   aria-label="Instagram">
                   <Icon
                     name="Instagram"
-                    className="text-yellow-500"
-                    size={20}
+                    className=" text-white"
+                    size={22}
                   />
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/80 transition-colors"
+                  className="w-11 h-11 border border-white hover:border-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors"
                   aria-label="Whatsapp">
-                  <FaWhatsapp className="text-green-500" size={20} />
+                  <FaWhatsapp className="text-white" size={22} />
                 </a>
               </div>
             </div>
