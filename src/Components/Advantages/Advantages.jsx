@@ -10,14 +10,14 @@ const Advantages = () => {
             Nossas Vantagens
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Veja por que nossos clientes confiam e indicam a
+            Veja por que nossos clientes confiam e indicam a{" "}
             <span className="text-[#F0AA30] font-bold">MP TELECOM</span>
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Estabilidade */}
-          <div className="bg-black/40 border border-white/20 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
+          <div className="bg-black/40 border border-white/30 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
             <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
               <Icon name="Signal" className="text-yellow-500" size={20} />
             </div>
@@ -31,7 +31,7 @@ const Advantages = () => {
           </div>
 
           {/* Interação 100% humana */}
-          <div className="bg-black/40 border border-white/20 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
+          <div className="bg-black/40 border border-white/30 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
             <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
               <Icon name="User" className="text-yellow-500" size={20} />
             </div>
@@ -45,7 +45,7 @@ const Advantages = () => {
           </div>
 
           {/* Valor Justo */}
-          <div className="bg-black/40 border border-white/20 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
+          <div className="bg-black/40 border border-white/30 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
             <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
               <Icon name="DollarSign" className="text-yellow-500" size={20} />
             </div>
@@ -59,7 +59,7 @@ const Advantages = () => {
           </div>
 
           {/* Equipe Qualificada */}
-          <div className="bg-black/40 border border-white/20 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
+          <div className="bg-black/40 border border-white/30 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
             <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
               <Icon name="CheckCircle" className="text-yellow-500" size={20} />
             </div>
@@ -73,7 +73,7 @@ const Advantages = () => {
           </div>
 
           {/* Agilidade */}
-          <div className="bg-black/40 border border-white/20 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
+          <div className="bg-black/40 border border-white/30 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
             <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
               <Icon name="Zap" className="text-yellow-500" size={20} />
             </div>
@@ -85,7 +85,7 @@ const Advantages = () => {
           </div>
 
           {/* Indique e Ganhe */}
-          <div className="bg-black/40 border border-white/20 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
+          <div className="bg-black/40 border border-white/30 backdrop-blur-sm hover:border-[#F0AA30] transition-all duration-300 p-6 rounded-lg">
             <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
               <Icon name="Gift" className="text-yellow-500" size={20} />
             </div>
