@@ -8,6 +8,7 @@ import {
   Phone,
   MapPin,
   Check,
+  MessageCircle,
 } from "lucide-react";
 
 export const iconComponents = {
@@ -20,6 +21,7 @@ export const iconComponents = {
   Phone,
   MapPin,
   Check,
+  MessageCircle,
 };
 
 export const Icon = ({

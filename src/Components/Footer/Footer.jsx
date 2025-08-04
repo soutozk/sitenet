@@ -127,8 +127,11 @@ const Footer = () => {
                   href="#"
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/80 transition-colors"
                   aria-label="Whatsapp">
-                  <Icon name="WhatsApp" className="text-yellow-500" size={20} />
-                  ZAP
+                  <Icon
+                    name="MessageCircle"
+                    className="text-yellow-500"
+                    size={20}
+                  />
                 </a>
               </div>
             </div>
