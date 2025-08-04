@@ -1,6 +1,6 @@
 import { Building2 } from "lucide-react";
 import { FadeIn } from "./Animations";
-import Logo from "../Images/Logo.png";
+import Logo from "../images/Logo.png";
 
 export function Header() {
   return (
@@ -11,7 +11,7 @@ export function Header() {
             <img
               src={Logo.src || Logo}
               alt="Logo"
-              className="w-full h-full object-contain"
+              className="w-[180px] h-[180px] object-contain"
             />
           </div>
         </div>
