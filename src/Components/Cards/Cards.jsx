@@ -77,8 +77,8 @@ const Testimonials = () => {
           spaceBetween={30}>
           {comentarios.map((card, i) => (
             <SwiperSlide key={i}>
-              <div className="bg-black border border-white/20 hover:border-[#F0AA30] backdrop-blur-sm rounded-lg p-6 h-full">
-                <div className="mb-4">
+              <div className="bg-black border border-white/20 hover:border-[#F0AA30] hover:shadow-[rgba(255,145,0,0.19)_0px_10px_20px,rgba(255,192,98,0.45)_0px_6px_6px] backdrop-blur-sm rounded-lg p-8 m-2 h-full">
+                <div className="mb-2">
                   <div className="flex items-center space-x-4 mb-2">
                     <div
                       className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold"

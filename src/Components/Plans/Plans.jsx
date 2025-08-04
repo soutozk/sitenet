@@ -38,7 +38,12 @@ const Plans = () => {
           </div>
 
           {/* MP Fast */}
-          <div className="bg-gradient-to-br from-yellow-600/40 to-yellow-500/10 border border-yellow-500/40 backdrop-blur-sm rounded-lg p-6 relative">
+          <div
+            className="bg-gradient-to-br from-yellow-600/40 to-yellow-500/10 border border-yellow-500/40 backdrop-blur-sm rounded-lg p-6 relative"
+            style={{
+              boxShadow:
+                "rgba(255, 145, 0, 0.19) 0px 10px 20px, rgba(255, 192, 98, 0.45) 0px 6px 6px",
+            }}>
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-black px-3 py-1 text-sm font-semibold rounded">
               Mais Popular
             </div>
