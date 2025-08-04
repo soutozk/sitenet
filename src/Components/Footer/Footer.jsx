@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from "../../Lib/Ultils/Icons/icons";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -127,11 +128,7 @@ const Footer = () => {
                   href="#"
                   className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/80 transition-colors"
                   aria-label="Whatsapp">
-                  <Icon
-                    name="MessageCircle"
-                    className="text-yellow-500"
-                    size={20}
-                  />
+                  <FaWhatsapp className="text-green-500" size={20} />
                 </a>
               </div>
             </div>
