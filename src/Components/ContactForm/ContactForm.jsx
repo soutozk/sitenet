@@ -26,7 +26,7 @@ const ContactForm = () => {
     name: "",
     email: "",
     phone: "",
-    company: "",
+    adress: "",
     plan: "",
     message: "",
   });
@@ -38,15 +38,15 @@ const ContactForm = () => {
     const message = `
 *Solicitação de Orçamento - MP Telecom*
 
-👤 *Nome:* ${formData.name}
-📧 *Email:* ${formData.email}
-📞 *Telefone:* ${formData.phone}
-🏢 *Empresa:* ${formData.company}
+ *Nome:* ${formData.name}
+ *Email:* ${formData.email}
+ *Telefone:* ${formData.phone}
+ *Endereço:* ${formData.adress}
 
-📦 *Plano de Interesse:* ${selectedPlan?.label}
-💬 *Descrição:* ${selectedPlan?.description}
+*Plano de Interesse:* ${selectedPlan?.label}
+*Descrição:* ${selectedPlan?.description}
 
-📝 *Mensagem adicional:* ${formData.message}
+ *Mensagem adicional:* ${formData.message}
 `;
 
     const url = `https://wa.me/556186781663?text=${encodeURIComponent(
@@ -113,12 +113,12 @@ const ContactForm = () => {
             </div>
 
             <div style={{ flex: "1 1 300px" }}>
-              <label style={{ color: "#fff" }}>Empresa</label>
+              <label style={{ color: "#fff" }}>Endereço</label>
               <input
                 type="text"
-                value={formData.company}
+                value={formData.adress}
                 onChange={(e) =>
-                  setFormData({ ...formData, company: e.target.value })
+                  setFormData({ ...formData, adress: e.target.value })
                 }
                 placeholder="Nome da sua empresa"
                 style={{ width: "100%", padding: "10px", marginTop: "5px" }}
