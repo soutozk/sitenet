@@ -9,6 +9,12 @@ import {
   MapPin,
   Check,
   MessageCircle,
+  Zap,
+  Gift,
+  CheckCircle,
+  DollarSign,
+  User,
+  Signal,
 } from "lucide-react";
 
 export const iconComponents = {
@@ -22,6 +28,12 @@ export const iconComponents = {
   MapPin,
   Check,
   MessageCircle,
+  Zap,
+  Gift,
+  CheckCircle,
+  DollarSign,
+  User,
+  Signal,
 };
 
 export const Icon = ({
