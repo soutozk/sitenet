@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* <FaqSection /> */}
       {/* <TourVirtual /> */}
-      {/* <TrabalheConosco /> */}
+      <TrabalheConosco />
       <Footer />
       <WhatsAppWidget />
     </main>

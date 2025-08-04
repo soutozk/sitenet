@@ -4,7 +4,11 @@ const Testimonials = () => {
   return (
     <div
       id="testimonials"
-      className="py-20 px-4 mt-[5%] mb-[5%] border border-[#F0AA30] p-8 rounded-3xl w-full ">
+      className="py-20 px-4 mt-[5%] mb-[5%] border border-[#F0AA30] p-8 rounded-3xl w-full "
+      style={{
+        boxShadow:
+          "rgba(255, 145, 0, 0.19) 0px 10px 20px, rgba(255, 192, 98, 0.45) 0px 6px 6px",
+      }}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2
