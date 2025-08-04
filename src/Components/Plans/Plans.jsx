@@ -83,12 +83,13 @@ const Plans = () => {
           {plans.map((plano, index) => (
             <div
               key={index}
-              className={`${plano.cores.bg} border border-gray-500/20 backdrop-blur-sm rounded-lg p-6 relative`}
+              className={`${plano.cores.bg} border border-gray-500/50 hover:border-[#F0AA30] hover:shadow-[rgba(255,145,0,0.19)_0px_10px_20px,rgba(255,192,98,0.45)_0px_6px_6px] backdrop-blur-sm rounded-lg p-6 relative`}
               style={
                 plano.destaque
                   ? {
                       boxShadow:
                         "rgba(255, 145, 0, 0.19) 0px 10px 20px, rgba(255, 192, 98, 0.45) 0px 6px 6px",
+                      border: "2px solid #F0AA30",
                     }
                   : {}
               }>
