@@ -56,7 +56,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" style={{ padding: "40px 20px" }}>
+    <section id="contact" style={{ padding: "40px 20px", border: "1px" }}>
       <div style={{ maxWidth: "800px", margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
           <h2 style={{ fontSize: "2rem", fontWeight: "bold", color: "#fff" }}>
