@@ -1,6 +1,6 @@
 import { Building2 } from "lucide-react";
 import { FadeIn } from "./Animations";
-// import Logo from "../Images/Logo.png";
+import Logo from "../Images/Logo.png";
 
 export function Header() {
   return (
@@ -8,11 +8,11 @@ export function Header() {
       <FadeIn>
         <div className="w-24 h-24 lg:w-32 lg:h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
           <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
-            {/* <img
+            <img
               src={Logo.src || Logo}
               alt="Logo"
               className="w-full h-full object-contain"
-            /> */}
+            />
           </div>
         </div>
 
