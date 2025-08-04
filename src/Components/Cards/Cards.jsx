@@ -67,7 +67,7 @@ const Testimonials = () => {
 
         <Swiper
           modules={[Autoplay, Pagination]}
-          autoplay={{ delay: 4000 }}
+          autoplay={{ delay: 3000 }}
           loop={true}
           breakpoints={{
             640: { slidesPerView: 1 },
