@@ -1,10 +1,75 @@
 import React from "react";
 import { Icon } from "../../Lib/Ultils/Icons/icons";
 
+const enviarParaWhatsApp = (nomePlano) => {
+  const numero = "5561986781663";
+  const mensagem = `Olá! Tenho interesse no plano ${nomePlano}. Poderia me dar mais informações?`;
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+  window.open(url, "_blank");
+};
+
+const plans = [
+  {
+    nome: "MP Basic",
+    descricao: "400 megas de internet via fibra",
+    preco: "R$ 89,90",
+    detalhes: "Fixo",
+    beneficios: [
+      "✅ Instalação gratuita",
+      "✅ Wi-Fi incluso",
+      "✅ Suporte técnico",
+    ],
+    destaque: false,
+    cores: {
+      bg: "bg-black/40",
+      texto: "text-gray-300",
+      precoTexto: "text-gray-400",
+      btn: "bg-gray-700 hover:bg-gray-600 text-white",
+    },
+  },
+  {
+    nome: "MP Fast",
+    descricao: "600 megas de internet via fibra",
+    preco: "R$ 99,90",
+    detalhes: "Fixo",
+    beneficios: [
+      "✅ Instalação gratuita",
+      "✅ Wi-Fi incluso",
+      "✅ Suporte técnico 24h",
+    ],
+    destaque: true,
+    cores: {
+      bg: "bg-gradient-to-br from-yellow-600/40 to-yellow-500/10",
+      texto: "text-yellow-200",
+      precoTexto: "text-yellow-200",
+      btn: "bg-yellow-500 hover:bg-yellow-400 text-black font-semibold",
+    },
+  },
+  {
+    nome: "MP Ultra",
+    descricao: "800 megas de internet via fibra",
+    preco: "R$ 99,90",
+    detalhes: "3 meses",
+    depois: "R$ 119,90 após",
+    beneficios: [
+      "✅ Instalação gratuita",
+      "✅ Wi-Fi incluso",
+      "✅ Suporte técnico completo",
+    ],
+    destaque: false,
+    cores: {
+      bg: "bg-black/40",
+      texto: "text-gray-300",
+      precoTexto: "text-gray-400",
+      btn: "bg-gray-700 hover:bg-gray-600 text-white",
+    },
+  },
+];
+
 const Plans = () => {
   return (
     <section id="plans">
-      <div className=" ">
+      <div>
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
             Planos e Serviços
@@ -15,90 +80,57 @@ const Plans = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {/* MP Basic */}
-          <div className="bg-black/40 border border-gray-500/20 backdrop-blur-sm rounded-lg p-6">
-            <h3 className="text-white text-2xl font-bold mb-2">MP Basic</h3>
-            <p className="text-gray-300 mb-4">
-              400 megas de internet via fibra
-            </p>
-            <div className="text-3xl font-bold text-white mb-4">
-              R$ 89,90
-              <span className="text-lg font-normal text-gray-400"> Fixo</span>
+          {plans.map((plano, index) => (
+            <div
+              key={index}
+              className={`${plano.cores.bg} border border-gray-500/20 backdrop-blur-sm rounded-lg p-6 relative`}
+              style={
+                plano.destaque
+                  ? {
+                      boxShadow:
+                        "rgba(255, 145, 0, 0.19) 0px 10px 20px, rgba(255, 192, 98, 0.45) 0px 6px 6px",
+                    }
+                  : {}
+              }>
+              {plano.destaque && (
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-black px-3 py-1 text-sm font-semibold rounded">
+                  Mais Popular
+                </div>
+              )}
+              <h3 className="text-white text-2xl font-bold mb-2">
+                {plano.nome}
+              </h3>
+              <p className={`${plano.cores.texto} mb-4`}>{plano.descricao}</p>
+              <div className="text-3xl font-bold text-white mb-4">
+                {plano.preco}
+                <span
+                  className={`text-lg font-normal ${plano.cores.precoTexto}`}>
+                  {" "}
+                  {plano.detalhes}
+                </span>
+                {plano.depois && (
+                  <>
+                    <br />
+                    <span className="text-xl font-semibold text-gray-300">
+                      {plano.depois}
+                    </span>
+                  </>
+                )}
+              </div>
+              <ul className={`space-y-3 ${plano.cores.texto}`}>
+                {plano.beneficios.map((beneficio, i) => (
+                  <li key={i} className="flex items-center gap-2">
+                    {beneficio}
+                  </li>
+                ))}
+              </ul>
+              <button
+                onClick={() => enviarParaWhatsApp(plano.nome)}
+                className={`w-full mt-6 py-2 rounded ${plano.cores.btn}`}>
+                Escolher Plano
+              </button>
             </div>
-            <ul className="space-y-3 text-gray-300">
-              <li className="flex items-center gap-2">
-                ✅ Instalação gratuita
-              </li>
-              <li className="flex items-center gap-2">✅ Wi-Fi incluso</li>
-              <li className="flex items-center gap-2">✅ Suporte técnico</li>
-            </ul>
-            <button className="w-full mt-6 bg-gray-700 hover:bg-gray-600 text-white py-2 rounded">
-              Escolher Plano
-            </button>
-          </div>
-
-          {/* MP Fast */}
-          <div
-            className="bg-gradient-to-br from-yellow-600/40 to-yellow-500/10 border border-yellow-500/40 backdrop-blur-sm rounded-lg p-6 relative"
-            style={{
-              boxShadow:
-                "rgba(255, 145, 0, 0.19) 0px 10px 20px, rgba(255, 192, 98, 0.45) 0px 6px 6px",
-            }}>
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-black px-3 py-1 text-sm font-semibold rounded">
-              Mais Popular
-            </div>
-            <h3 className="text-white text-2xl font-bold mb-2">MP Fast</h3>
-            <p className="text-yellow-200 mb-4">
-              600 megas de internet via fibra
-            </p>
-            <div className="text-3xl font-bold text-white mb-4">
-              R$ 99,90
-              <span className="text-lg font-normal text-yellow-200"> Fixo</span>
-            </div>
-            <ul className="space-y-3 text-yellow-100">
-              <li className="flex items-center gap-2">
-                ✅ Instalação gratuita
-              </li>
-              <li className="flex items-center gap-2">✅ Wi-Fi incluso</li>
-              <li className="flex items-center gap-2">
-                ✅ Suporte técnico 24h
-              </li>
-            </ul>
-            <button className="w-full mt-6 bg-yellow-500 hover:bg-yellow-400 text-black py-2 rounded font-semibold">
-              Escolher Plano
-            </button>
-          </div>
-
-          {/* MP Ultra */}
-          <div className="bg-black/40 border border-gray-500/20 backdrop-blur-sm rounded-lg p-6">
-            <h3 className="text-white text-2xl font-bold mb-2">MP Ultra</h3>
-            <p className="text-gray-300 mb-4">
-              800 megas de internet via fibra
-            </p>
-            <div className="text-3xl font-bold text-white mb-4">
-              R$ 99,90
-              <span className="text-lg font-normal text-gray-400">
-                {" "}
-                3 meses
-              </span>
-              <br />
-              <span className="text-xl font-semibold text-gray-300">
-                R$ 119,90 após
-              </span>
-            </div>
-            <ul className="space-y-3 text-gray-300">
-              <li className="flex items-center gap-2">
-                ✅ Instalação gratuita
-              </li>
-              <li className="flex items-center gap-2">✅ Wi-Fi incluso</li>
-              <li className="flex items-center gap-2">
-                ✅ Suporte técnico completo
-              </li>
-            </ul>
-            <button className="w-full mt-6 bg-gray-700 hover:bg-gray-600 text-white py-2 rounded">
-              Escolher Plano
-            </button>
-          </div>
+          ))}
         </div>
       </div>
     </section>
