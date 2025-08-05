@@ -115,10 +115,10 @@ export default function TrabalheConosco() {
               <div>
                 <div className="flex flex-col gap-6 mb-8">
                   <div
-                    className="bg-white/35 border-[2px] p-6 rounded-lg "
+                    className="bg-white/35 border-[4px] border-[#F0AA30] p-6 rounded-lg "
                     style={{
                       boxShadow:
-                        "rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 6px 6px",
+                        "rgba(255, 145, 0, 0.19) 0px 10px 20px, rgba(255, 192, 98, 0.45) 0px 6px 6px",
                     }}>
                     <div className="h-16 w-16 mx-auto mb-4 text-yellow-600">
                       <p>icon</p>
@@ -133,52 +133,6 @@ export default function TrabalheConosco() {
                       dinâmico
                     </p>
                   </div>
-
-                  <div
-                    className="bg-white/35 border-[2px] p-6 rounded-lg "
-                    style={{
-                      boxShadow:
-                        "rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 6px 6px",
-                    }}>
-                    <div className="h-16 w-16 mx-auto mb-4 text-yellow-600">
-                      <p>icon</p>
-                    </div>
-                    <h3
-                      className="text-xl font-semibold mb-2 text-white "
-                      style={{ textShadow: "0 1px 1px rgba(0, 0, 0, 0.9)" }}>
-                      Ambiente Colaborativo
-                    </h3>
-                    <p className="text-gray-600 font-semibold">
-                      Trabalhe com profissionais talentosos em um ambiente
-                      dinâmico
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button
-                    onClick={() => setView("vagas")}
-                    className="px-8 py-3 bg-yellow-400 text-white font-bold rounded-lg hover:bg-yellow-700 transition-colors flex items-center justify-center">
-                    <svg
-                      className="w-5 h-5 mr-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-                    Ver Vagas
-                  </button>
-
-                  <button
-                    onClick={() => handleOpenForm()}
-                    className="px-8 py-3 bg-white border-2 border-yellow-400 text-yellow-600 font-bold rounded-lg hover:bg-yellow-50 transition-colors">
-                    Candidatura Espontânea
-                  </button>
                 </div>
               </div>
             </div>
