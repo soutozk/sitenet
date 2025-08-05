@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { bannerImages } from "../../Data/BannerData";
 
 const BannerHome = () => {
@@ -22,8 +21,6 @@ const BannerHome = () => {
 
   return (
     <>
-
-
     <div className="w-full relative overflow-hidden">
     <div className="flex h-full transition-transform duration-500">
       {bannerImages.map((image) => (
@@ -49,7 +46,7 @@ const BannerHome = () => {
         </div>
       ))}
     </div>
-            {/* <button
+    {/* <button
           onClick={prevSlide}
           className="absolute left-4 top-1/2 -translate-y-1/2 backdrop-blur-xl bg-white/10 border border-white/45 text-white p-2 rounded-full z-10"
           aria-label="Slide anterior">
@@ -60,7 +57,7 @@ const BannerHome = () => {
           className="absolute right-4 top-1/2 -translate-y-1/2 backdrop-blur-xl bg-white/10 border border-white/45 text-white p-2 rounded-full z-10"
           aria-label="Próximo slide">
           &gt;
-        </button> */}
+    </button> */}
   </div>
 
     </>
