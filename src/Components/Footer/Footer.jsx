@@ -17,7 +17,7 @@ const Footer = () => {
               Links Rápidos
             </h3>
             <ul className="space-y-2">
-              {["Planos", "Contato", "Tv", "Fibra Óptica", "Ajuda"].map((item, index) => (
+              {["Sobre Nós", "Vantagens", "Planos", "Contato", "Ajuda"].map((item, index) => (
                 <li key={index}>
                   <a
                     href="#"
