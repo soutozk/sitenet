@@ -5,7 +5,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full z-50 bg-black text-white shadow-md border-b-2 border-yellow-600">
+      <div className="fixed top-0 left-0 w-full z-50 bg-black/20 text-white shadow-md border-b-2 border-yellow-600">
         {/* Main Navigation */}
         <div className="px-4 py-4">
           <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -21,28 +21,28 @@ const NavBar = () => {
                   <a
                     href="#"
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
+                    Sobre Nós
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
+                    Vantagens
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Planos
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
-                    Contato
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
-                    TV
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
                     className="text-white hover:text-[#F0AA30] font-medium  text-lg">
-                    Fibra Óptica
+                    Contato
                   </a>
                 </li>
                 <li>
