@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
 
 const NavBar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -13,48 +13,48 @@ const NavBar = () => {
           <div className="mx-auto flex max-w-7xl items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
-              <Link to="/" className="text-2xl font-bold text-white">
+              <a to="/" className="text-2xl font-bold text-white">
                 MP TELECOM
-              </Link>
+              </a>
             </div>
 
-            {/* Navigation Links - Desktop */}
+            {/* Navigation as - Desktop */}
             <nav className="hidden lg:flex">
               <ul className="flex gap-8">
                 <li>
-                  <Link
-                    to="/#about"
+                  <a
+                    href="#about"
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Sobre Nós
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="/#advantages"
+                  <a
+                    href="#advantages"
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Vantagens
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="/#plans"
+                  <a
+                    href="#plans"
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Planos
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="/#contact"
+                  <a
+                    href="#contact"
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Contato
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="/Ajuda"
+                  <a
+                    href="/Ajuda"
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Ajuda
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -62,11 +62,11 @@ const NavBar = () => {
             {/* Right Side Actions */}
             <div className="flex items-center gap-4">
               <div className="relative group">
-                <Link
-                  to="/#budget"
+                <a
+                  href="/#budget"
                   className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300">
                   Assine já
-                </Link>
+                </a>
               </div>
 
               {/* Mobile Menu Button */}
@@ -109,52 +109,52 @@ const NavBar = () => {
         <div className="flex flex-col items-center h-full pt-20 px-4">
           <ul className="space-y-6">
             <li>
-              <Link
-                to="/#about"
+              <a
+                href="#about"
                 className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2"
                 onClick={() => setIsSidebarOpen(false)}>
                 Sobre Nós
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/#advantages"
+              <a
+                href="#advantages"
                 className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2"
                 onClick={() => setIsSidebarOpen(false)}>
                 Vantagens
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/#plans"
+              <a
+                href="#plans"
                 className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2"
                 onClick={() => setIsSidebarOpen(false)}>
                 Planos
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/#contact"
+              <a
+                href="#contact"
                 className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2"
                 onClick={() => setIsSidebarOpen(false)}>
                 Contato
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/Ajuda"
+              <a
+                href="/Ajuda"
                 className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2"
                 onClick={() => setIsSidebarOpen(false)}>
                 Ajuda
-              </Link>
+              </a>
             </li>
             <li className="p-4 border-t border-gray-700">
-              <Link
-                to="/#budget"
+              <a
+                href="#budget"
                 className="block text-center bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl text-center duration-300"
                 onClick={() => setIsSidebarOpen(false)}>
                 Assine já
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

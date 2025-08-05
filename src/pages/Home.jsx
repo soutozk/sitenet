@@ -18,7 +18,7 @@ export default function Home() {
     <main className="min-h-screen flex flex-col items-center bg-black ">
       <NavBar />
       <BannerHome />
-      <About />
+      <About/>
       <Advantages />
       <Cards />
       <Plans />
