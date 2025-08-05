@@ -87,8 +87,8 @@ export default function TrabalheConosco() {
   };
 
   return (
-    <div
-      className="flex flex-col lg:flex-row items-center justify-center lg:w-full bg-black p-8 rounded-3xl mb-[5%]"
+    <div id="contact"
+      className="flex flex-col lg:flex-row items-center justify-center lg:w-full bg-black p-8 rounded-3xl mb-[5%] scroll-mt-32"
       style={{
         boxShadow:
           "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",

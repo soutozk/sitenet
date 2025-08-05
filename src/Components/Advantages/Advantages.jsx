@@ -3,7 +3,7 @@ import { Icon } from "../../Lib/Ultils/Icons/icons";
 
 const Advantages = () => {
   return (
-    <section id="advantages" className="py-20 px-4">
+    <section id="advantages" className="py-20 px-4 scroll-m-24">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">

@@ -3,7 +3,7 @@ import { Icon } from "../../Lib/Ultils/Icons/icons";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-4 ">
+    <section id="about" className="py-20 px-4 scroll-m-40">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">

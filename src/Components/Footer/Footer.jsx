@@ -17,12 +17,19 @@ const Footer = () => {
               Links Rápidos
             </h3>
             <ul className="space-y-2">
-              {["Sobre Nós", "Vantagens", "Planos", "Contato", "Ajuda"].map((item, index) => (
+              {[
+                { label: "Sobre Nós", id: "about" },
+                { label: "Vantagens", id: "advantages" },
+                { label: "Planos", id: "plans" },
+                { label: "Contato", id: "contact" },
+                { label: "Ajuda", id: "help" },
+              ].map((item, index) => (
                 <li key={index}>
                   <a
-                    href="#"
-                    className="text-white hover:text-yellow-500 font-bold  transition-colors">
-                    {item}
+                    href={`#${item.id}`}
+                    className="text-white hover:text-yellow-500 font-bold transition-colors"
+                  >
+                    {item.label}
                   </a>
                 </li>
               ))}

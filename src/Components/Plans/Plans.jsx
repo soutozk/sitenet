@@ -68,7 +68,7 @@ const plans = [
 
 const Plans = () => {
   return (
-    <section id="plans">
+    <section id="plans" className="scroll-m-28">
       <div>
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">

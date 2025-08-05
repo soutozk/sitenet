@@ -19,35 +19,35 @@ const NavBar = () => {
               <ul className="flex gap-8">
                 <li>
                   <a
-                    href="#"
+                    href="#about"
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Sobre Nós
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#advantages"
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Vantagens
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#plans"
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Planos
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#contact"
                     className="text-white hover:text-[#F0AA30] font-medium  text-lg">
                     Contato
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#help"
                     className="text-white hover:text-[#F0AA30] font-medium  text-lg">
                     Ajuda
                   </a>
@@ -58,11 +58,11 @@ const NavBar = () => {
             {/* Right Side Actions */}
             <div className="flex items-center gap-4">
               <div className="relative group">
-                <button
+                <a href="#budget"
                   className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300
                 ">
                   Assine já
-                </button>
+                </a>
               </div>
             </div>
           </div>
