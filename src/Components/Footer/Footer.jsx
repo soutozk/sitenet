@@ -9,8 +9,8 @@ const Footer = () => {
         boxShadow:
           "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
       }}>
-      <div className="container mx-auto px-6 py-6">
-        <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-4">
+      <div className="container mx-auto px-6 py-0">
+        <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-4 mt-10">
           {/* Links Rápidos */}
           <div className="space-y-4">
             <h3 className="font-bold text-lg border-b-2 text-white pb-2">
@@ -35,15 +35,20 @@ const Footer = () => {
               Contato
             </h3>
             <div className="space-y-3">
-              <div className="flex items-center space-x-3">
+              <div className="flex">
+                <a href="https://wa.me/5561986781663" className="flex items-center space-x-3">
                 <Icon name="Phone" color="white" size={20} />
-                <span className="font-medium text-white">(61) 98678-1663</span>
+                 <span className="font-medium text-white">(61) 98678-1663</span> 
+                </a>
+                
               </div>
               <div className="flex items-center space-x-3">
-                <Icon name="Mail" color="white" size={20} />
-                <span className="font-medium text-white">
-                  sac@mptelecom.net.br
-                </span>
+                <a href="mailto:sac@mptelecom.net.br" className="flex items-center space-x-3">
+                  <Icon name="Mail" color="white" size={20} />
+                  <span className="font-medium text-white">
+                    sac@mptelecom.net.br
+                </span>                  
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="MapPin" color="white" size={20} />
