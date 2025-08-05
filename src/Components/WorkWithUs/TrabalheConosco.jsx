@@ -88,7 +88,7 @@ export default function TrabalheConosco() {
 
   return (
     <div
-      className="flex flex-col lg:flex-row items-center justify-center lg:w-full bg-black p-8 rounded-3xl"
+      className="flex flex-col lg:flex-row items-center justify-center lg:w-full bg-black p-8 rounded-3xl mb-[5%]"
       style={{
         boxShadow:
           "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
@@ -115,7 +115,7 @@ export default function TrabalheConosco() {
               <div>
                 <div className="flex flex-col gap-6 mb-8">
                   <div
-                    className="bg-white/35 border-[4px] border-[#F0AA30] p-6 rounded-lg "
+                    className="bg-white/35 border-[4px] border-[#F0AA30] p-6  rounded-lg "
                     style={{
                       boxShadow:
                         "rgba(255, 145, 0, 0.19) 0px 10px 20px, rgba(255, 192, 98, 0.45) 0px 6px 6px",
