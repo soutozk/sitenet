@@ -14,7 +14,7 @@ const socialLinks = [
   {
     name: "Instagram",
     icon: Instagram,
-    color: "from-pink-500 to-rose-500",
+    color: "from-pink-500 to-rose-800",
     url: "https://www.instagram.com/bellasolucoesoficial",
   },
   // {
@@ -38,13 +38,13 @@ const socialLinks = [
   {
     name: "WhatsApp",
     icon: MessageCircle,
-    color: "from-green-500 to-green-600",
+    color: "from-green-500 to-green-800",
     url: "https://wa.me/5561986781663",
   },
   {
     name: "Site",
     icon: Monitor,
-    color: "from-green-500 to-green-600",
+    color: "from-yellow-500 to-yellow-800",
     url: "#",
   },
 ];

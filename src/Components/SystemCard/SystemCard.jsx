@@ -13,7 +13,7 @@ export function SystemCard({
   return (
     <FadeIn delay={delay}>
       <div
-        className={`group cursor-pointer transition-all duration-300 bg-gradient-to-r ${color} rounded-lg shadow-xl`}>
+        className={`group cursor-pointer transition-all duration-300 rounded-lg shadow-xl`}>
         <div className="relative h-32 lg:h-40 overflow-hidden rounded-lg">
           <img
             src={image || "/placeholder.svg"}
