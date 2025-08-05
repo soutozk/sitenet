@@ -161,7 +161,7 @@ const ContactForm = () => {
           href="https://wa.me/556186781663"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 p-[12px] hover:bg-yellow-500 text-white border cursor-pointer bg-transparent duration-300  border-white hover:border-yellow-500 rounded-lg text-center"
+          className="flex-1 p-[12px] hover:bg-yellow-500 text-white border cursor-pointer bg-transparent duration-300  border-white hover:border-yellow-500 rounded-lg justify-center flex items-center"
         >
           Ligar Agora
         </a>
