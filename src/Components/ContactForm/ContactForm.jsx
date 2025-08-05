@@ -74,7 +74,7 @@ const ContactForm = () => {
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             placeholder="Seu nome completo"
-            className="w-full mt-[5px] p-[10px] bg-transparent  border rounded-lg"
+            className="w-full mt-[5px] p-[10px] text-white bg-transparent  border rounded-lg"
             required
           />
         </div>
@@ -86,7 +86,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             placeholder="seu@email.com"
-            className="w-full mt-[5px] p-[10px] bg-transparent  border rounded-lg"
+            className="w-full mt-[5px] p-[10px] text-white  bg-transparent  border rounded-lg"
             required
           />
         </div>
@@ -98,7 +98,7 @@ const ContactForm = () => {
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             placeholder="(11) 99999-9999"
-            className="w-full mt-[5px] p-[10px] bg-transparent  border rounded-lg"
+            className="w-full mt-[5px] p-[10px] text-white  bg-transparent  border rounded-lg"
             required
           />
         </div>
@@ -109,8 +109,8 @@ const ContactForm = () => {
             type="text"
             value={formData.adress}
             onChange={(e) => setFormData({ ...formData, adress: e.target.value })}
-            placeholder="Nome da sua empresa"
-            className="w-full mt-[5px] p-[10px] bg-transparent  border rounded-lg"
+            placeholder="Seu endereço completo"
+            className="w-full mt-[5px] p-[10px] text-white  bg-transparent  border rounded-lg"
           />
         </div>
       </div>
@@ -120,16 +120,23 @@ const ContactForm = () => {
         <select
           value={formData.plan}
           onChange={(e) => setFormData({ ...formData, plan: e.target.value })}
-          className="w-full mt-[5px] p-[10px] text-white bg-transparent  border rounded-lg"
+          className="w-full mt-[5px] p-[10px] text-white bg-transparent border rounded-lg"
           required
         >
-          <option value="">Selecione um plano</option>
+          <option value="" style={{ backgroundColor: "black", color: "white" }}>
+            Selecione um plano
+          </option>
           {plans.map((plan) => (
-            <option key={plan.value} value={plan.value}>
+            <option
+              key={plan.value}
+              value={plan.value}
+              className="bg-black text-white"
+            >
               {plan.label}
             </option>
           ))}
         </select>
+
       </div>
 
       <div className="mt-[20px]">
@@ -139,7 +146,7 @@ const ContactForm = () => {
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
           placeholder="Conte-nos mais sobre suas necessidades..."
           rows="5"
-          className="w-full mt-[5px] p-[10px] bg-transparent  border rounded-lg"
+          className="w-full mt-[5px] p-[10px] text-white  bg-transparent  border rounded-lg"
         ></textarea>
       </div>
 
@@ -154,7 +161,7 @@ const ContactForm = () => {
           href="https://wa.me/556186781663"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 p-[12px] bg-transparent text-yellow-500 hover:text-black text-center no-underline  border border-yellow-500 hover:border-white  hover:bg-white rounded-lg"
+          className="flex-1 p-[12px] hover:bg-yellow-500 text-white border cursor-pointer bg-transparent duration-300  border-white hover:border-yellow-500 rounded-lg text-center"
         >
           Ligar Agora
         </a>
