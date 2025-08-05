@@ -56,148 +56,113 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="budget" className="scroll-mt-20" style={{ padding: "40px 20px", border: "1px" }}>
-      <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-        <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <h2 style={{ fontSize: "2rem", fontWeight: "bold", color: "#fff" }}>
-            Solicite Seu Orçamento
-          </h2>
-          <p style={{ fontSize: "1.1rem", color: "#ccc" }}>
-            Preencha o formulário e nossa equipe entrará em contato em até 24
-            horas
-          </p>
+ <section id="budget" className="scroll-mt-20 px-[20px] py-[40px] ">
+  <div className="max-w-[800px] mx-auto">
+    <div className="text-center mb-[40px]">
+      <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Solicite Seu Orçamento</h2>
+      <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+        Preencha o formulário e nossa equipe entrará em contato em até 24 horas
+      </p>
+    </div>
+
+    <form onSubmit={handleSubmit}>
+      <div className="flex flex-wrap gap-[20px]">
+        <div className="flex-1 min-w-[300px]">
+          <label className="text-white">Nome Completo</label>
+          <input
+            type="text"
+            value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            placeholder="Seu nome completo"
+            className="w-full mt-[5px] p-[10px] bg-transparent  border rounded-lg"
+            required
+          />
         </div>
 
-        <form onSubmit={handleSubmit}>
-          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-            <div style={{ flex: "1 1 300px" }}>
-              <label style={{ color: "#fff" }}>Nome Completo</label>
-              <input
-                type="text"
-                value={formData.name}
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
-                }
-                placeholder="Seu nome completo"
-                style={{ width: "100%", padding: "10px", marginTop: "5px" }}
-                required
-              />
-            </div>
+        <div className="flex-1 min-w-[300px] ">
+          <label className="text-white">Email</label>
+          <input
+            type="email"
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+            placeholder="seu@email.com"
+            className="w-full mt-[5px] p-[10px] bg-transparent  border rounded-lg"
+            required
+          />
+        </div>
 
-            <div style={{ flex: "1 1 300px" }}>
-              <label style={{ color: "#fff" }}>Email</label>
-              <input
-                type="email"
-                value={formData.email}
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
-                placeholder="seu@email.com"
-                style={{ width: "100%", padding: "10px", marginTop: "5px" }}
-                required
-              />
-            </div>
+        <div className="flex-1 min-w-[300px]">
+          <label className="text-white">Telefone</label>
+          <input
+            type="text"
+            value={formData.phone}
+            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+            placeholder="(11) 99999-9999"
+            className="w-full mt-[5px] p-[10px] bg-transparent  border rounded-lg"
+            required
+          />
+        </div>
 
-            <div style={{ flex: "1 1 300px" }}>
-              <label style={{ color: "#fff" }}>Telefone</label>
-              <input
-                type="text"
-                value={formData.phone}
-                onChange={(e) =>
-                  setFormData({ ...formData, phone: e.target.value })
-                }
-                placeholder="(11) 99999-9999"
-                style={{ width: "100%", padding: "10px", marginTop: "5px" }}
-                required
-              />
-            </div>
-
-            <div style={{ flex: "1 1 300px" }}>
-              <label style={{ color: "#fff" }}>Endereço</label>
-              <input
-                type="text"
-                value={formData.adress}
-                onChange={(e) =>
-                  setFormData({ ...formData, adress: e.target.value })
-                }
-                placeholder="Nome da sua empresa"
-                style={{ width: "100%", padding: "10px", marginTop: "5px" }}
-              />
-            </div>
-          </div>
-
-          <div style={{ marginTop: "20px" }}>
-            <label style={{ color: "#fff" }}>Plano de Interesse</label>
-            <select
-              value={formData.plan}
-              onChange={(e) =>
-                setFormData({ ...formData, plan: e.target.value })
-              }
-              style={{ width: "100%", padding: "10px", marginTop: "5px" }}
-              required>
-              <option value="">Selecione um plano</option>
-              {plans.map((plan) => (
-                <option key={plan.value} value={plan.value}>
-                  {plan.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div style={{ marginTop: "20px" }}>
-            <label style={{ color: "#fff" }}>Mensagem</label>
-            <textarea
-              value={formData.message}
-              onChange={(e) =>
-                setFormData({ ...formData, message: e.target.value })
-              }
-              placeholder="Conte-nos mais sobre suas necessidades..."
-              rows="5"
-              style={{
-                width: "100%",
-                padding: "10px",
-                marginTop: "5px",
-              }}></textarea>
-          </div>
-
-          <div
-            style={{
-              marginTop: "30px",
-              display: "flex",
-              gap: "20px",
-              flexWrap: "wrap",
-            }}>
-            <button
-              type="submit"
-              style={{
-                flex: "1",
-                padding: "12px",
-                backgroundColor: "#6B21A8",
-                color: "#fff",
-                border: "none",
-                cursor: "pointer",
-              }}>
-              Solicitar Orçamento
-            </button>
-            <a
-              href="https://wa.me/556186781663"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                flex: "1",
-                padding: "12px",
-                backgroundColor: "transparent",
-                color: "#A855F7",
-                border: "1px solid #A855F7",
-                textAlign: "center",
-                textDecoration: "none",
-              }}>
-              Ligar Agora
-            </a>
-          </div>
-        </form>
+        <div className="flex-1 min-w-[300px]">
+          <label className="text-white">Endereço</label>
+          <input
+            type="text"
+            value={formData.adress}
+            onChange={(e) => setFormData({ ...formData, adress: e.target.value })}
+            placeholder="Nome da sua empresa"
+            className="w-full mt-[5px] p-[10px] bg-transparent  border rounded-lg"
+          />
+        </div>
       </div>
-    </section>
+
+      <div className="mt-[20px]">
+        <label className="text-white">Plano de Interesse</label>
+        <select
+          value={formData.plan}
+          onChange={(e) => setFormData({ ...formData, plan: e.target.value })}
+          className="w-full mt-[5px] p-[10px] text-white bg-transparent  border rounded-lg"
+          required
+        >
+          <option value="">Selecione um plano</option>
+          {plans.map((plan) => (
+            <option key={plan.value} value={plan.value}>
+              {plan.label}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className="mt-[20px]">
+        <label className="text-white ">Mensagem</label>
+        <textarea
+          value={formData.message}
+          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+          placeholder="Conte-nos mais sobre suas necessidades..."
+          rows="5"
+          className="w-full mt-[5px] p-[10px] bg-transparent  border rounded-lg"
+        ></textarea>
+      </div>
+
+      <div className="mt-[30px] flex flex-wrap gap-[20px]">
+        <button
+          type="submit"
+          className="flex-1 p-[12px] hover:bg-yellow-500 text-white border cursor-pointer bg-transparent duration-300  border-white hover:border-yellow-500 rounded-lg"
+        >
+          Solicitar Orçamento
+        </button>
+        <a
+          href="https://wa.me/556186781663"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 p-[12px] bg-transparent text-yellow-500 hover:text-black text-center no-underline  border border-yellow-500 hover:border-white  hover:bg-white rounded-lg"
+        >
+          Ligar Agora
+        </a>
+      </div>
+    </form>
+  </div>
+</section>
+
   );
 };
 
