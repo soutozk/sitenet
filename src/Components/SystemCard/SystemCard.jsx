@@ -13,7 +13,11 @@ export function SystemCard({
   return (
     <FadeIn delay={delay}>
       <div
-        className={`group cursor-pointer transition-all duration-300 rounded-lg shadow-xl`}>
+        className={`group cursor-pointer transition-all duration-300 rounded-lg shadow-xl`}
+        style={{
+          boxShadow:
+            "rgba(255, 145, 0, 0.19) 0px 5px 3px, rgba(255, 192, 98, 0.45) 0px 2px 2px",
+        }}>
         <div className="relative h-32 lg:h-40 overflow-hidden rounded-lg">
           <img
             src={image || "/placeholder.svg"}

@@ -8,7 +8,7 @@ import { Footer } from "../Components/FooterLinkBio";
 import ImageMercadoPago from "../images/MercadoPago.png";
 import NossoSite from "../images/NossoSite.png";
 import ContactLink from "../images/ContactLink.png";
-import Zap from "../images/Zap.png";
+import MpFast from "../images/MpFast.png";
 import { Contact } from "lucide-react";
 
 const systems = [
@@ -29,7 +29,7 @@ const systems = [
   {
     title: "",
     description: "",
-    image: Zap,
+    image: MpFast,
     icon: "Users",
     url: "https://wa.me/5561986781663?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20MP%20Fast.%20Poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F",
   },
@@ -46,7 +46,7 @@ export default function LinkBio() {
 
         {/* Main Systems Grid */}
         <div className="px-8 lg:px-6 mt-12 lg:mt-20">
-          <div className="space-y-4 max-w-lg mx-auto">
+          <div className="space-y- max-w-lg mx-auto">
             {systems.map((system, index) => (
               <a
                 href={system.url}
