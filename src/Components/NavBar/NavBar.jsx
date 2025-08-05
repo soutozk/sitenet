@@ -1,9 +1,36 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const NavBar = () => {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (id) => {
+    if (location.pathname !== "/") {
+      navigate("/", {
+        state: { scrollTo: id },
+        // Força substituição para garantir que o efeito aconteça
+        replace: true,
+      });
+
+      // Rola após um pequeno delay (opcional)
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300);
+
+      return;
+    }
+
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsSidebarOpen(false);
+  };
 
   return (
     <>
@@ -22,32 +49,32 @@ const NavBar = () => {
             <nav className="hidden lg:flex">
               <ul className="flex gap-8">
                 <li>
-                  <Link
-                    to="/#about"
+                  <button
+                    onClick={() => scrollToSection("about")}
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Sobre Nós
-                  </Link>
+                  </button>
                 </li>
                 <li>
-                  <Link
-                    to="/#advantages"
+                  <button
+                    onClick={() => scrollToSection("advantages")}
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Vantagens
-                  </Link>
+                  </button>
                 </li>
                 <li>
-                  <Link
-                    to="/#plans"
+                  <button
+                    onClick={() => scrollToSection("plans")}
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Planos
-                  </Link>
+                  </button>
                 </li>
                 <li>
-                  <Link
-                    to="/#contact"
+                  <button
+                    onClick={() => scrollToSection("contact")}
                     className="text-white hover:text-[#F0AA30] font-medium text-lg">
                     Contato
-                  </Link>
+                  </button>
                 </li>
                 <li>
                   <Link
@@ -62,11 +89,11 @@ const NavBar = () => {
             {/* Right Side Actions */}
             <div className="flex items-center gap-4">
               <div className="relative group">
-                <Link
-                  to="/#budget"
+                <button
+                  onClick={() => scrollToSection("budget")}
                   className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300">
                   Assine já
-                </Link>
+                </button>
               </div>
 
               {/* Mobile Menu Button */}
@@ -109,52 +136,46 @@ const NavBar = () => {
         <div className="flex flex-col items-center h-full pt-20 px-4">
           <ul className="space-y-6">
             <li>
-              <Link
-                to="/#about"
-                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2"
-                onClick={() => setIsSidebarOpen(false)}>
+              <button
+                onClick={() => scrollToSection("about")}
+                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2 w-full">
                 Sobre Nós
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to="/#advantages"
-                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2"
-                onClick={() => setIsSidebarOpen(false)}>
+              <button
+                onClick={() => scrollToSection("advantages")}
+                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2 w-full">
                 Vantagens
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to="/#plans"
-                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2"
-                onClick={() => setIsSidebarOpen(false)}>
+              <button
+                onClick={() => scrollToSection("plans")}
+                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2 w-full">
                 Planos
-              </Link>
+              </button>
             </li>
             <li>
-              <Link
-                to="/#contact"
-                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2"
-                onClick={() => setIsSidebarOpen(false)}>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2 w-full">
                 Contato
-              </Link>
+              </button>
             </li>
             <li>
               <Link
                 to="/Ajuda"
-                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2"
-                onClick={() => setIsSidebarOpen(false)}>
+                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2 w-full">
                 Ajuda
               </Link>
             </li>
-            <li className="p-4 border-t border-gray-700">
-              <Link
-                to="/#budget"
-                className="block text-center bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl text-center duration-300"
-                onClick={() => setIsSidebarOpen(false)}>
+            <li className="p-4 border-t border-gray-700 w-full">
+              <button
+                onClick={() => scrollToSection("budget")}
+                className="block text-center bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl text-center duration-300 w-full">
                 Assine já
-              </Link>
+              </button>
             </li>
           </ul>
         </div>
@@ -166,24 +187,6 @@ const NavBar = () => {
           className="fixed inset-0 bg-black/50 z-40 lg:hidden"
           onClick={() => setIsSidebarOpen(false)}
         />
-      )}
-
-      {/* Search Bar (quando ativada) */}
-      {isSearchOpen && (
-        <div className="border-t border-gray-800 px-4 py-4 bg-gray-900 text-white fixed top-20 left-0 w-full z-40">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex items-center gap-4">
-              <input
-                type="text"
-                placeholder="O que você está procurando?"
-                className="flex-1 bg-gray-800 border border-gray-600 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-orange-400"
-              />
-              <button className="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded text-white">
-                Buscar
-              </button>
-            </div>
-          </div>
-        </div>
       )}
     </>
   );
