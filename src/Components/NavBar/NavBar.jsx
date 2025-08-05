@@ -47,7 +47,7 @@ const NavBar = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#help"
                     className="text-white hover:text-[#F0AA30] font-medium  text-lg">
                     Ajuda
                   </a>
