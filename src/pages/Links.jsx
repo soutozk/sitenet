@@ -8,7 +8,7 @@ import { QuickLinkCard } from "../Components/QuickLinkCard";
 import { ContactButton } from "../Components/ContactButton/ContactButton";
 import { Footer } from "../Components/FooterLinkBio";
 import ImageMercadoPago from "../images/MercadoPago.png";
-import NossosSistemas from "../images/NossosSistemas.png";
+import NossoSite from "../images/NossoSite.png";
 import Avaliacao from "../images/Avaliacao.png";
 import Zap from "../images/Zap.png";
 
@@ -16,7 +16,7 @@ const systems = [
   {
     title: "Sistema ERP Completo",
     description: "Gestão integrada para sua empresa",
-    image: NossosSistemas,
+    image: NossoSite,
     color: "from-blue-600 to-blue-800",
     icon: "Building2",
     url: "https://bellaerp.com.br",
