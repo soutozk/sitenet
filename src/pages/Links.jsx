@@ -46,7 +46,7 @@ export default function LinkBio() {
 
         {/* Main Systems Grid */}
         <div className="px-8 lg:px-6 mt-12 lg:mt-20">
-          <div className="space-y- max-w-lg mx-auto">
+          <div className="space-y-8 max-w-lg mx-auto">
             {systems.map((system, index) => (
               <a
                 href={system.url}
