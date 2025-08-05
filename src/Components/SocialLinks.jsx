@@ -39,7 +39,7 @@ const socialLinks = [
     name: "WhatsApp",
     icon: MessageCircle,
     color: "from-green-500 to-green-600",
-    url: "https://api.whatsapp.com/send/?phone=5561986781663&text&type=phone_number&app_absent=0",
+    url: "https://wa.me/5561986781663",
   },
   {
     name: "Site",
@@ -55,12 +55,14 @@ export function SocialLinks() {
       <div className="flex justify-center space-x-4 lg:space-x-6">
         {socialLinks.map((social, index) => (
           <FadeIn key={index} delay={index * 50}>
-            <div
-              className={`w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-gradient-to-r ${social.color} p-0.5 cursor-pointer group hover:scale-110 transition-all duration-300 transform`}>
-              <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center group-hover:bg-transparent transition-colors duration-300">
-                <social.icon className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
+            <a href={social.url} target="_blank">
+              <div
+                className={`w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-gradient-to-r ${social.color} p-0.5 cursor-pointer group hover:scale-110 transition-all duration-300 transform`}>
+                <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center group-hover:bg-transparent transition-colors duration-300">
+                  <social.icon className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
+                </div>
               </div>
-            </div>
+            </a>
           </FadeIn>
         ))}
       </div>

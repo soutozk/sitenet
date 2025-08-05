@@ -98,7 +98,7 @@ export default function TrabalheConosco() {
           <div className="text-center">
             <div className="flex items-center flex-col mb-8 text-center">
               <h1 className="text-4xl font-extrabold text-white">
-                Trabalhe Conosco
+                Entre em Contato Agora Mesmo
               </h1>
               <p className="text-lg font-bold mt-2 text-white">
                 Faça parte de uma equipe inovadora e apaixonada por tecnologia
