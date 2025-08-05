@@ -21,7 +21,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href="#"
-                    className="text-white font-bold hover:text-black transition-colors">
+                    className="text-white hover:text-yellow-500 font-bold hover:text-black transition-colors">
                     {item}
                   </a>
                 </li>
@@ -37,16 +37,16 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex">
                 <a href="https://wa.me/5561986781663" className="flex items-center space-x-3">
-                <Icon name="Phone" color="white" size={20} />
-                 <span className="font-medium text-white">(61) 98678-1663</span> 
+                  <Icon name="Phone" color="white" size={20} />
+                  <span className="font-medium text-white duration-300 hover:text-yellow-500">(61) 98678-1663</span> 
                 </a>
                 
               </div>
               <div className="flex items-center space-x-3">
                 <a href="mailto:sac@mptelecom.net.br" className="flex items-center space-x-3">
-                  <Icon name="Mail" color="white" size={20} />
-                  <span className="font-medium text-white">
-                    sac@mptelecom.net.br
+                  <Icon name="Mail" color="white" size={20} className=""/>
+                  <span className="font-medium text-white duration-300 hover:text-yellow-500">
+                  sac@mptelecom.net.br
                 </span>                  
                 </a>
               </div>
@@ -66,13 +66,13 @@ const Footer = () => {
               <div className="flex space-x-3">
                 <a
                   href="https://www.instagram.com/mp_telecom"
-                  className="w-11 h-11 border border-white hover:border-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors"
+                  className="w-11 h-11 border border-white hover:border-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-500 duration-300"
                   aria-label="Instagram">
                   <Icon name="Instagram" className="text-white" size={22} />
                 </a>
                 <a
                   href="https://wa.me/5561986781663"
-                  className="w-11 h-11 border border-white hover:border-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors"
+                  className="w-11 h-11 border border-white hover:border-yellow-500 rounded-full flex items-center justify-center hover:bg-yellow-500  duration-300"
                   aria-label="Whatsapp">
                   <FaWhatsapp className="text-white" size={22} />
                 </a>
