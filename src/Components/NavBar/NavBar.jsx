@@ -130,9 +130,9 @@ const NavBar = () => {
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed top-20 left-0 h-auto w-64 bg-black/95 text-white z-50 transform ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out lg:hidden border-r-2 border-yellow-600`}>
+className={`fixed top-[4.8rem] right-0 h-auto w-64 bg-black/95 text-white z-50 transform ${
+  isSidebarOpen ? "translate-x-0" : "translate-x-full"
+} transition-transform duration-300 ease-in-out lg:hidden border-l-2 border-yellow-600`}>
         <div className="flex flex-col items-center h-full pt-20 px-4">
           <ul className="space-y-6">
             <li>
