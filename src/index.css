@@ -60,7 +60,7 @@ code {
 }
 
 [vw] {
-  left: 15px !important;
+  left: 0px !important;
   right: auto !important;
   top: 70% !important;
   bottom: auto !important;

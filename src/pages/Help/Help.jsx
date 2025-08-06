@@ -9,6 +9,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Fade from "@mui/material/Fade";
 import { Search } from "lucide-react";
 import NavBar from "../../Components/NavBar/NavBar";
+import Footer from "../../Components/Footer/Footer";  
 
 export default function FAQMpTelecom() {
   const [expanded, setExpanded] = React.useState(null);
@@ -178,6 +179,7 @@ export default function FAQMpTelecom() {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

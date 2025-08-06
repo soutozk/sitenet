@@ -2,6 +2,7 @@ import { Icon } from "../../Lib/Ultils/Icons/icons";
 import { FaWhatsapp } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const navigate = useNavigate();
