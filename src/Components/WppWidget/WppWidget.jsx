@@ -17,7 +17,7 @@ export default function WhatsAppWidget() {
   }, [isHovered]);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "5511999999999";
+    const phoneNumber = "5561986781663";
     const message = "Olá! Gostaria de mais informações.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message

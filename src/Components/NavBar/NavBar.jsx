@@ -36,7 +36,7 @@ const NavBar = () => {
     <>
       <div className="fixed top-0 left-0 w-full z-50 bg-black/90 text-white shadow-md border-b-2 border-yellow-600">
         {/* Main Navigation */}
-        <div className="px-4 py-4">
+        <div className="px-4 py-4 ">
           <div className="mx-auto flex max-w-7xl items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
@@ -87,6 +87,14 @@ const NavBar = () => {
             </nav>
 
             {/* Right Side Actions */}
+              <div className="relative group hidden lg:flex">
+                <button
+                  onClick={() => scrollToSection("budget")}
+                  className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300">
+                  Assine já
+                </button>
+              </div>
+
             <div className="flex items-center gap-4">
               {/* Mobile Menu Button */}
               <button

@@ -21,7 +21,7 @@ const BannerHome = () => {
 
   return (
     <>
-    <div className="w-full relative overflow-hidden">
+    <div className="w-full relative overflow-hidden md:pt-16">
     <div className="flex h-full transition-transform duration-500">
       {bannerImages.map((image) => (
         <div
