@@ -40,7 +40,7 @@ const NavBar = () => {
           <div className="mx-auto flex max-w-7xl items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
-              <Link to="/" className="text-2xl font-bold text-white">
+              <Link to="/" className=" xs:text-lg text-2xl  font-bold text-white">
                 MP TELECOM
               </Link>
             </div>
