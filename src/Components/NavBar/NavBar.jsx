@@ -88,14 +88,6 @@ const NavBar = () => {
 
             {/* Right Side Actions */}
             <div className="flex items-center gap-4">
-              <div className="relative group">
-                <button
-                  onClick={() => scrollToSection("budget")}
-                  className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300">
-                  Assine já
-                </button>
-              </div>
-
               {/* Mobile Menu Button */}
               <button
                 className="lg:hidden text-white focus:outline-none"
@@ -130,7 +122,7 @@ const NavBar = () => {
 
       {/* Mobile Sidebar */}
       <div
-className={`fixed top-[4.8rem] right-0 h-auto w-64 bg-black/95 text-white z-50 transform ${
+className={`fixed top-[4.1rem] right-0 h-auto w-64 bg-black/95 text-white z-50 transform ${
   isSidebarOpen ? "translate-x-0" : "translate-x-full"
 } transition-transform duration-300 ease-in-out lg:hidden border-l-2 border-yellow-600`}>
         <div className="flex flex-col items-center h-full pt-20 px-4">
@@ -173,7 +165,7 @@ className={`fixed top-[4.8rem] right-0 h-auto w-64 bg-black/95 text-white z-50 t
             <li className="p-4 border-t border-gray-700 w-full">
               <button
                 onClick={() => scrollToSection("budget")}
-                className="block text-center bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl text-center duration-300 w-full">
+                className="block  bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl text-center duration-300 w-full">
                 Assine já
               </button>
             </li>
