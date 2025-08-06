@@ -1,27 +1,28 @@
-import { useState } from "react";
+import { Icon } from "../../Lib/Ultils/Icons/icons";
+import { FaWhatsapp } from "react-icons/fa";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useState } from "react";
 
-const NavBar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [activeLink, setActiveLink] = useState(null);
 
   const scrollToSection = (id) => {
+    setActiveLink(id);
+
     if (location.pathname !== "/") {
       navigate("/", {
         state: { scrollTo: id },
-        // Força substituição para garantir que o efeito aconteça
         replace: true,
       });
 
-      // Rola após um pequeno delay (opcional)
       setTimeout(() => {
         const element = document.getElementById(id);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
       }, 300);
-
       return;
     }
 
@@ -29,159 +30,134 @@ const NavBar = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-    setIsSidebarOpen(false);
   };
 
   return (
-    <>
-      <div className="fixed top-0 left-0 w-full z-50 bg-black/90 text-white shadow-md border-b-2 border-yellow-600">
-        {/* Main Navigation */}
-        <div className="px-4 py-4">
-          <div className="mx-auto flex max-w-7xl items-center justify-between">
-            {/* Logo */}
-            <div className="flex items-center">
-              <Link to="/" className="text-2xl font-bold text-white">
-                MP TELECOM
-              </Link>
-            </div>
-
-            {/* Navigation Links - Desktop */}
-            <nav className="hidden lg:flex">
-              <ul className="flex gap-8">
-                <li>
-                  <button
-                    onClick={() => scrollToSection("about")}
-                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
-                    Sobre Nós
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("advantages")}
-                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
-                    Vantagens
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("plans")}
-                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
-                    Planos
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("contact")}
-                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
-                    Contato
-                  </button>
-                </li>
-                <li>
-                  <Link
-                    to="/Ajuda"
-                    className="text-white hover:text-[#F0AA30] font-medium text-lg">
-                    Ajuda
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-
-            {/* Right Side Actions */}
-            <div className="flex items-center gap-4">
-              {/* Mobile Menu Button */}
-              <button
-                className="lg:hidden text-white focus:outline-none"
-                onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  {isSidebarOpen ? (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M6 18L18 6M6 6l12 12"
-                    />
+    <div
+      className="w-full border border-[#F0AA30] rounded-3xl relative"
+      style={{
+        boxShadow:
+          "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+      }}>
+      <div className="container mx-auto px-6 py-0">
+        <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-4 mt-10">
+          {/* Links Rápidos - Mesmo sistema da NavBar */}
+          <div className="space-y-4">
+            <h3 className="font-bold text-lg border-b-2 text-white pb-2">
+              Links Rápidos
+            </h3>
+            <ul className="space-y-2">
+              {[
+                { label: "Sobre Nós", id: "about" },
+                { label: "Vantagens", id: "advantages" },
+                { label: "Planos", id: "plans" },
+                { label: "Contato", id: "contact" },
+                { label: "Ajuda", to: "/Ajuda" },
+              ].map((item, index) => (
+                <li key={index}>
+                  {item.to ? (
+                    <Link
+                      to={item.to}
+                      className={`text-white hover:text-[#F0AA30] font-bold transition-colors ${
+                        location.pathname === item.to ? "text-[#F0AA30]" : ""
+                      }`}>
+                      {item.label}
+                    </Link>
                   ) : (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
+                    <button
+                      onClick={() => scrollToSection(item.id)}
+                      className={`text-white hover:text-[#F0AA30] font-bold transition-colors text-left w-full ${
+                        activeLink === item.id ? "text-[#F0AA30]" : ""
+                      }`}>
+                      {item.label}
+                    </button>
                   )}
-                </svg>
-              </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contato */}
+          <div className="space-y-4">
+            <h3 className="font-bold text-lg border-b-2 text-white pb-2">
+              Contato
+            </h3>
+            <div className="space-y-3">
+              <div className="flex">
+                <a
+                  href="https://wa.me/5561986781663"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-3 hover:text-[#F0AA30]">
+                  <Icon name="Phone" color="white" size={20} />
+                  <span className="font-medium text-white duration-300 hover:text-[#F0AA30]">
+                    (61) 98678-1663
+                  </span>
+                </a>
+              </div>
+              <div className="flex items-center space-x-3">
+                <a
+                  href="mailto:sac@mptelecom.net.br"
+                  className="flex items-center space-x-3 hover:text-[#F0AA30]">
+                  <Icon name="Mail" color="white" size={20} />
+                  <span className="font-medium text-white duration-300 hover:text-[#F0AA30]">
+                    sac@mptelecom.net.br
+                  </span>
+                </a>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Icon name="MapPin" color="white" size={20} />
+                <span className="font-medium text-white">Brasília - DF</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Redes Sociais */}
+          <div className="space-y-4">
+            <h3 className="font-bold text-lg border-b-2 text-white pb-2">
+              Redes Sociais
+            </h3>
+            <div className="pt-2">
+              <div className="flex space-x-3">
+                <a
+                  href="https://www.instagram.com/mp_telecom"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 border border-white hover:border-[#F0AA30] rounded-full flex items-center justify-center hover:bg-[#F0AA30] duration-300"
+                  aria-label="Instagram">
+                  <Icon name="Instagram" className="text-white" size={22} />
+                </a>
+                <a
+                  href="https://wa.me/5561986781663"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 border border-white hover:border-[#F0AA30] rounded-full flex items-center justify-center hover:bg-[#F0AA30] duration-300"
+                  aria-label="Whatsapp">
+                  <FaWhatsapp className="text-white" size={22} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Mobile Sidebar */}
-      <div
-className={`fixed top-[4.1rem] right-0 h-auto w-64 bg-black/95 text-white z-50 transform ${
-  isSidebarOpen ? "translate-x-0" : "translate-x-full"
-} transition-transform duration-300 ease-in-out lg:hidden border-l-2 border-yellow-600`}>
-        <div className="flex flex-col items-center h-full pt-20 px-4">
-          <ul className="space-y-6">
-            <li>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2 w-full">
-                Sobre Nós
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => scrollToSection("advantages")}
-                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2 w-full">
-                Vantagens
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => scrollToSection("plans")}
-                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2 w-full">
-                Planos
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2 w-full">
-                Contato
-              </button>
-            </li>
-            <li>
-              <Link
-                to="/Ajuda"
-                className="block text-center text-white hover:text-[#F0AA30] font-medium text-lg py-2 w-full">
-                Ajuda
-              </Link>
-            </li>
-            <li className="p-4 border-t border-gray-700 w-full">
-              <button
-                onClick={() => scrollToSection("budget")}
-                className="block  bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl text-center duration-300 w-full">
-                Assine já
-              </button>
-            </li>
-          </ul>
+      {/* Base do Footer - Estilo igual ao NavBar */}
+      <div className="relative w-full aspect-[1200/120] mt-6">
+        <svg viewBox="0 0 1200 120" className="w-full h-38 fill-[#F0AA30]">
+          <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"></path>
+        </svg>
+        <div className="bg-[#F0AA30] py-2">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+              <p className="text-white text-lg font-semibold text-center">
+                © 2025 MP TELECOM
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      {/* Overlay when sidebar is open */}
-      {isSidebarOpen && (
-        <div
-          className="fixed inset-0 bg-black/50 z-40 lg:hidden"
-          onClick={() => setIsSidebarOpen(false)}
-        />
-      )}
-    </>
+    </div>
   );
 };
 
-export default NavBar;
+export default Footer;
