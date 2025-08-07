@@ -75,10 +75,9 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-            <a href=""></a>
             <a
               href="https://mptelecom.sgp.net.br/accounts/central/login"
-              className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300">
+              className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300 max-w-[200px] text-center justify-center">
               Já sou cliente
             </a>
           </div>
