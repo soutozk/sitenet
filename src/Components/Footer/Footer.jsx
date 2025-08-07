@@ -75,6 +75,12 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
+            <a href=""></a>
+            <a
+              href="https://mptelecom.sgp.net.br/accounts/central/login"
+              className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300">
+              Já sou cliente
+            </a>
           </div>
 
           {/* Contato */}
