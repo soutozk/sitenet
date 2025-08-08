@@ -11,7 +11,7 @@ export default function About() {
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Conectamos você ao mundo com internet de alta velocidade, canais
-            exclusivos e um atendimento que entende suas necessidades.
+            exclusivos e um atendimento sob medida para suas necessidades.
           </p>
         </div>
 
