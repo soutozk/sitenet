@@ -58,12 +58,7 @@ const ContactForm = () => {
   return (
  <section id="budget" className="scroll-mt-20 px-[20px] py-[40px] ">
   <div className="max-w-[800px] mx-auto">
-    <div className="text-center mb-[40px]">
-      <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Solicite Seu Orçamento</h2>
-      <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-        Preencha o formulário e nossa equipe entrará em contato em até 24 horas
-      </p>
-    </div>
+
 
     <form onSubmit={handleSubmit}>
       <div className="flex flex-wrap gap-[20px]">
@@ -155,7 +150,7 @@ const ContactForm = () => {
           type="submit"
           className="flex-1 p-[12px] hover:bg-yellow-500 text-white border cursor-pointer bg-transparent duration-300  border-white hover:border-yellow-500 rounded-lg"
         >
-          Solicitar Orçamento
+          Consultar disponibilidade
         </button>
         <a
           href="https://wa.me/556186781663"
