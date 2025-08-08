@@ -50,11 +50,10 @@ const Advantages = () => {
               <Icon name="DollarSign" className="text-yellow-500" size={20} />
             </div>
             <h3 className="text-[#F0AA30] text-xl font-bold mb-2">
-              Valor Justo
+              Valor
             </h3>
             <p className="text-gray-300">
-              Planos com qualidade e preço acessível. Pague somente pelo que
-              realmente precisa.
+              Nosso preço reflete a qualidade, o cuidado no atendimento e os resultados que entregamos.
             </p>
           </div>
 

@@ -58,7 +58,7 @@ const Service = () => {
           </div>
           <h4 className="font-semibold text-white mb-2">Canais Exclusivos</h4>
           <p className="text-gray-400 text-sm">
-            Conteúdos especiais incluídos nos pacotes
+            Conteúdos especiais que podem ser adicionados ao plano de internet
           </p>
         </div>
 
