@@ -44,13 +44,7 @@ export default function TrabalheConosco() {
                   Informações de Contato
                 </h3>
                 <div className="space-y-4 text-white">
-                  <div className="flex items-center justify-center gap-3">
-                    <Icon name="Mail" color="white" size={20} />
-
-                    <span className="text-lg font-semibold">
-                      sac@mptelecom.net.br
-                    </span>
-                  </div>
+                  
                   <div className="flex items-center justify-center gap-3">
                     <Icon name="Phone" color="white" size={20} />
                     <span className="text-lg font-semibold">
