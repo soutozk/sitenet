@@ -101,16 +101,6 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <a
-                  href="mailto:sac@mptelecom.net.br"
-                  className="flex items-center space-x-3 hover:text-[#F0AA30]">
-                  <Icon name="Mail" color="white" size={20} />
-                  <span className="font-medium text-white duration-300 hover:text-[#F0AA30]">
-                    sac@mptelecom.net.br
-                  </span>
-                </a>
-              </div>
-              <div className="flex items-center space-x-3">
                 <Icon name="MapPin" color="white" size={20} />
                 <span className="font-medium text-white">Brasília - DF</span>
               </div>
