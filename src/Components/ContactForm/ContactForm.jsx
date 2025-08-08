@@ -60,7 +60,7 @@ const ContactForm = () => {
   <div className="max-w-[800px] mx-auto">
     <div className="text-center mb-[40px]">
 
-      <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+      <p className="text-lg font-bold mt-2 text-white md:text-xl">
         Preencha o formulário e nossa equipe entrará em contato em até 24 horas
       </p>
     </div>
