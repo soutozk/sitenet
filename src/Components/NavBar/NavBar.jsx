@@ -40,7 +40,9 @@ const NavBar = () => {
           <div className="mx-auto flex max-w-7xl items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
-              <Link to="/" className=" xs:text-lg text-2xl  font-bold text-white">
+              <Link
+                to="/"
+                className=" xs:text-lg text-2xl  font-bold text-white">
                 MP TELECOM
               </Link>
             </div>
@@ -87,13 +89,18 @@ const NavBar = () => {
             </nav>
 
             {/* Right Side Actions */}
-              <div className="relative group hidden lg:flex">
-                <button
-                  onClick={() => scrollToSection("budget")}
-                  className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300">
-                  Assine já
-                </button>
-              </div>
+            <div className="relative group hidden  lg:flex gap-4">
+              <button
+                onClick={() => scrollToSection("budget")}
+                className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300">
+                Assine já
+              </button>
+              <a
+                href="https://mptelecom.sgp.net.br/accounts/central/login"
+                className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300 max-w-[150px] text-center justify-center">
+                Já sou cliente
+              </a>
+            </div>
 
             <div className="flex items-center gap-4">
               {/* Mobile Menu Button */}
@@ -177,6 +184,14 @@ const NavBar = () => {
                 Assine já
               </button>
             </li>
+            <label htmlFor="">
+              {" "}
+              <a
+                href="https://mptelecom.sgp.net.br/accounts/central/login"
+                className="bg-transparent border border-white hover:border-[#F0AA30] hover:bg-[#F0AA30] text-white px-4 py-2 rounded-xl flex items-center duration-300 max-w-[150px] text-center justify-center">
+                Já sou cliente
+              </a>
+            </label>
           </ul>
         </div>
       </div>
