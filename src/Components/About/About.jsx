@@ -51,8 +51,8 @@ export default function About() {
             </div>
           </div>
           <div className="relative">
-            <div className="bg-gradient-to-br from-yellow-600/10 to-gray-800/10 rounded-2xl p-8 backdrop-blur-sm border border-white/30">
-              <div className="grid grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-yellow-600/10 to-gray-800/10 rounded-2xl p- md:p-5 lg:p-8 backdrop-blur-sm border border-white/30">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 p-2 md:p-4">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-[#F0AA30] mb-2">
                     1K+
@@ -67,12 +67,6 @@ export default function About() {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-[#F0AA30] mb-2">
-                    24/7
-                  </div>
-                  <div className="text-gray-300">Suporte</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F0AA30] mb-2">
                     5 ★
                   </div>
                   <div className="text-gray-300">Avaliação</div>
@@ -80,6 +74,7 @@ export default function About() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
