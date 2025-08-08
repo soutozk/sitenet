@@ -145,10 +145,10 @@ export default function FAQMpTelecom() {
               slotProps={{ transition: { timeout: 400 } }}
               sx={[
                 {
-                  backgroundColor: "#444",
+                  backgroundColor: "#000",
                   border: "1px solid #F0AA30",
                   borderRadius: "8px",
-                  boxShadow: "0 0 10px #F0AA30",
+                  boxShadow: "0 0 4px #F0AA30",
                   color: "#fff",
                   overflow: "hidden",
                 },
@@ -167,7 +167,7 @@ export default function FAQMpTelecom() {
                     },
               ]}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
                 aria-controls={`${faq.id}-content`}
                 id={`${faq.id}-header`}>
                 <Typography component="span">{faq.title}</Typography>
