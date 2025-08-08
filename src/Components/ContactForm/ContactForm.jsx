@@ -66,7 +66,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="budget" className="scroll-mt-20 px-[20px] py-[40px]">
+    <section id="budget" className="scroll-mt-10 md:scroll-mt-16 px-[20px] py-[40px]">
       <div className="max-w-[800px] mx-auto">
         <div className="text-center mb-[40px]">
           <p className="text-lg font-bold mt-2 text-white md:text-xl">
