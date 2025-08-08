@@ -187,7 +187,7 @@ const ContactForm = () => {
             <button
               type="submit"
               className="flex-1 p-[12px] hover:bg-yellow-500 text-white border cursor-pointer bg-transparent duration-300  border-white hover:border-yellow-500 rounded-lg">
-              Consultar disponibilidade
+              Consultar Disponibilidade
             </button>
             <a
               href="https://wa.me/556186781663"
