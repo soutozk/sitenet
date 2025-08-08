@@ -58,7 +58,12 @@ const ContactForm = () => {
   return (
  <section id="budget" className="scroll-mt-20 px-[20px] py-[40px] ">
   <div className="max-w-[800px] mx-auto">
+    <div className="text-center mb-[40px]">
 
+      <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+        Preencha o formulário e nossa equipe entrará em contato em até 24 horas
+      </p>
+    </div>
 
     <form onSubmit={handleSubmit}>
       <div className="flex flex-wrap gap-[20px]">
