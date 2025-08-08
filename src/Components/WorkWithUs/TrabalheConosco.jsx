@@ -33,7 +33,7 @@ export default function TrabalheConosco() {
             </div>
             <div className="flex flex-col gap-6 mb-8 w-full max-w-md">
               <div
-                className="bg-white/35 border-[3px] border-[#F0AA30] p-6 rounded-lg text-center"
+                className="bg-transparent border-[3px] border-[#F0AA30] p-6 rounded-lg text-center"
                 style={{
                   boxShadow:
                     "rgba(255, 145, 0, 0.19) 0px 10px 20px, rgba(255, 192, 98, 0.45) 0px 6px 6px",
