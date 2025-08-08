@@ -9,12 +9,17 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Fade from "@mui/material/Fade";
 import { Search } from "lucide-react";
 import NavBar from "../../Components/NavBar/NavBar";
-import Footer from "../../Components/Footer/Footer";  
+import Footer from "../../Components/Footer/Footer";
 
 export default function FAQMpTelecom() {
   const [expanded, setExpanded] = React.useState(null);
   const [searchQuery, setSearchQuery] = React.useState("");
   const [isFocused, setIsFocused] = React.useState(false);
+
+  // Faz o scroll fixo no topo, sem animação, assim que o componente é montado
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleExpansion = (panel) => () => {
     setExpanded((prevExpanded) => (prevExpanded === panel ? null : panel));
@@ -83,7 +88,8 @@ export default function FAQMpTelecom() {
           Você pode entrar em contato por e-mail:{" "}
           <a
             className="text-yellow-400 underline"
-            href="mailto:sac@mptelecom.net.br">
+            href="mailto:sac@mptelecom.net.br"
+          >
             sac@mptelecom.net.br
           </a>{" "}
           ou pelo WhatsApp:{" "}
@@ -91,7 +97,8 @@ export default function FAQMpTelecom() {
             className="text-yellow-400 underline"
             href="https://wa.me/5561986781663"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             (61) 98678-1663
           </a>
           .
@@ -108,10 +115,7 @@ export default function FAQMpTelecom() {
     <>
       <NavBar />
 
-      <div
-        className="
-          min-h-screen bg-black text-white pt-24 pb-10 px-4
-        ">
+      <div className="min-h-screen bg-black text-white pt-24 pb-10 px-4">
         <h1 className="text-3xl font-bold text-center mb-8">
           Perguntas Frequentes (FAQ)
         </h1>
@@ -125,7 +129,7 @@ export default function FAQMpTelecom() {
               onChange={(e) => setSearchQuery(e.target.value)}
               onFocus={() => setIsFocused(true)}
               onBlur={() => setIsFocused(false)}
-              className={`w-full pl-10 pr-4 py-2 rounded border border-gray-600 bg-black text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F0AA30] transition-colors duration-300 `}
+              className="w-full pl-10 pr-4 py-2 rounded border border-gray-600 bg-black text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F0AA30] transition-colors duration-300"
             />
             <Search
               className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
@@ -138,7 +142,6 @@ export default function FAQMpTelecom() {
           {filteredFaqData.map((faq) => (
             <Accordion
               key={faq.id}
-              ref={faq.ref || null}
               expanded={expanded === faq.id}
               onChange={handleExpansion(faq.id)}
               slots={{ transition: Fade }}
@@ -165,11 +168,13 @@ export default function FAQMpTelecom() {
                         display: "none",
                       },
                     },
-              ]}>
+              ]}
+            >
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
+                expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
                 aria-controls={`${faq.id}-content`}
-                id={`${faq.id}-header`}>
+                id={`${faq.id}-header`}
+              >
                 <Typography component="span">{faq.title}</Typography>
               </AccordionSummary>
               <AccordionDetails>
