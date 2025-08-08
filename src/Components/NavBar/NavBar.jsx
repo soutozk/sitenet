@@ -42,7 +42,7 @@ const NavBar = () => {
             <div className="flex items-center">
               <Link
                 to="/"
-                className=" xs:text-lg text-2xl  font-bold text-white">
+                className="text-xl md:text-2xl  font-bold text-white">
                 MP TELECOM
               </Link>
             </div>
