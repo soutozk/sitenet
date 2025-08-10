@@ -34,7 +34,7 @@ const Footer = () => {
 
   return (
     <div
-      className="w-full border border-[#F0AA30] rounded-3xl relative"
+      className="w-full border border-[#F0AA30] rounded-t-3xl relative"
       style={{
         boxShadow:
           "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
@@ -137,10 +137,15 @@ const Footer = () => {
       </div>
 
       {/* Base do Footer - Estilo igual ao NavBar */}
-      <div className="relative w-full aspect-[1200/120] mt-6">
-        <svg viewBox="0 0 1200 120" className="w-full h-38 fill-[#F0AA30]">
-          <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"></path>
+      <div className="relative w-full mt-6 overflow-hidden">
+        <svg
+          viewBox="0 0 1200 122" // aumentei de 120 para 122
+          preserveAspectRatio="none"
+          className="w-full h-[60px] fill-[#F0AA30] block"
+        >
+          <path d="M0,60 C300,120 900,0 1200,60 L1200,122 L0,122 Z" />
         </svg>
+
         <div className="bg-[#F0AA30] py-2">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
